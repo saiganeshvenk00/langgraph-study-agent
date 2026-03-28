@@ -18,7 +18,7 @@ from tools import list_note_files, read_note_file, save_output
 from pydantic import BaseModel, Field
 
 
-load_dotenv()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
 
 llm = ChatOpenAI(
     model="gpt-4.1-mini",
@@ -217,9 +217,9 @@ Notes:
 ##Add the nodes to the graph
 
 graph_builder.add_node("router", router_node)
-graph_builder.add_node("summary", summary_agent)
-graph_builder.add_node("flashcards", flashcard_agent)
-graph_builder.add_node("rewrite", rewrite_agent)
+graph_builder.add_node("summary_agent", summary_agent)
+graph_builder.add_node("flashcard_agent", flashcard_agent)
+graph_builder.add_node("rewrite_agent", rewrite_agent)
 
 
 ###Routing logic for conditional edges
@@ -250,6 +250,44 @@ graph_builder.add_conditional_edges(
     }
 )
 
+#syntax for conditional edges
+'''graph_builder.add_conditional_edges(
+    source,        # arg 1
+    path,          # arg 2
+    path_map,      # arg 3 (optional)
+)'''
+
 graph_builder.add_edge("summary_agent", END)
 graph_builder.add_edge("flashcard_agent", END)
 graph_builder.add_edge("rewrite_agent", END)
+
+#Step5: Compile the graph------------------------------------------------------
+memory = MemorySaver()
+graph = graph_builder.compile(checkpointer=memory)
+
+#Step6: Run the graph------------------------------------------------------
+def run_graph(messages: List[Any], session_id: str):
+    state = graph.invoke(
+        {
+            "messages": messages,
+            "subject": "",
+            "task": "",
+            "filename": "",
+            "note_content": "",
+            "output": "",
+            "session_id": session_id,
+        },
+        config={"configurable": {"thread_id": session_id}}
+    )
+    return state["output"]
+
+
+
+if __name__ == "__main__":
+    session_id = "test-session-1"
+    messages = [HumanMessage(content="Summarize my chemistry notes")]
+    
+    result = run_graph(messages, session_id)
+    print(result)
+
+
