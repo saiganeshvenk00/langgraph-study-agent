@@ -1,9 +1,313 @@
-Geography is the study of the Earth's landscapes, environments, and the relationships between people and their surroundings. It is divided into physical geography, which examines natural systems, and human geography, which explores how people organise and interact with space and place.
+GEOGRAPHY - COMPREHENSIVE STUDY NOTES
+======================================
 
-The Earth's surface is constantly shaped by internal and external forces. Plate tectonics explains how the lithosphere is divided into large plates that move over the mantle, causing earthquakes, volcanic activity, and the formation of mountain ranges. Erosion, weathering, and deposition by water, wind, and ice further sculpt landforms such as valleys, deltas, and coastlines over geological time.
+1. INTRODUCTION TO GEOGRAPHY
+------------------------------
+Geography is the study of the Earth — its landscapes, environments, peoples, and the processes that shape all of these. It is uniquely interdisciplinary, bridging natural science and social science. The two main branches are:
 
-Climate and weather are central to physical geography. Climate is determined by latitude, altitude, proximity to oceans, and prevailing winds. The Earth has several climate zones including tropical, arid, temperate, and polar. Climate change, driven largely by increased greenhouse gas emissions from human activity, is altering weather patterns, raising sea levels, and threatening ecosystems worldwide.
+Physical Geography: studies the natural world — landforms, climate, ecosystems, rivers, soils, oceans, and atmosphere. Subdisciplines include geomorphology (landforms), climatology, hydrology, and biogeography.
 
-Rivers are vital geographic features that shape landscapes and support human settlement. They flow from upland sources to the sea, passing through stages of erosion in upper courses and deposition in lower courses. Deltas and floodplains form at the mouths and lower reaches of major rivers. Freshwater from rivers is essential for agriculture, industry, and drinking water.
+Human Geography: studies human societies and their relationship with space and place — population, cities, economic development, culture, politics, and globalisation. Subdisciplines include urban geography, economic geography, cultural geography, and political geography.
 
-Human geography examines population distribution, migration, urbanisation, and economic development. Push and pull factors drive migration, with people leaving areas of hardship and moving toward opportunity. Cities grow as centres of economic activity, but rapid urbanisation creates challenges around housing, infrastructure, and inequality. Globalisation connects economies and cultures while also raising issues of sustainability and resource distribution.
+Environmental Geography links the two, studying how people affect and are affected by the natural environment. Issues like climate change, deforestation, and resource depletion sit at this intersection.
+
+Geographic Information Systems (GIS): digital tools for capturing, storing, analysing, and presenting spatial data. Used in urban planning, disaster management, epidemiology, and environmental monitoring.
+
+
+2. THE EARTH — STRUCTURE AND PLATE TECTONICS
+------------------------------
+Earth's internal structure (from centre outward):
+- Inner core: solid iron-nickel ball; temperatures up to 5,400°C; held solid by immense pressure
+- Outer core: liquid iron-nickel; its movement generates Earth's magnetic field (magnetosphere — protects Earth from solar wind)
+- Mantle: semi-solid rock; convection currents in the mantle drive tectonic plate movement
+- Crust: thin outer shell. Oceanic crust (denser, 5–10 km thick, mainly basalt); Continental crust (less dense, 30–70 km thick, mainly granite)
+
+Plate Tectonics:
+Earth's lithosphere (crust + upper mantle) is divided into approximately 15 major tectonic plates. These plates move slowly (1–10 cm/year) driven by convection currents in the mantle and ridge push/slab pull forces.
+
+Types of plate boundaries:
+- Divergent (constructive) boundaries: plates move apart. New oceanic crust forms as magma rises (e.g., Mid-Atlantic Ridge). Creates shield volcanoes and rift valleys. Iceland sits on the Mid-Atlantic Ridge.
+- Convergent (destructive) boundaries: plates move toward each other.
+  * Oceanic-continental: denser oceanic plate subducts under continental plate; creates deep ocean trenches, volcanic mountain chains (e.g., Andes), and earthquakes
+  * Oceanic-oceanic: one subducts, creating trenches and volcanic island arcs (e.g., Japan)
+  * Continental-continental: neither subducts; crust crumples to form fold mountain ranges (e.g., Himalayas — Indian plate colliding with Eurasian plate)
+- Conservative (transform) boundaries: plates slide past each other horizontally; no crust is created or destroyed; causes powerful earthquakes (e.g., San Andreas Fault, California)
+
+Volcanoes:
+- Formed at divergent or convergent boundaries, and above hot spots (mantle plumes)
+- Shield volcanoes: broad, gently sloping; runny basaltic lava; less violent (e.g., Hawaiian volcanoes)
+- Composite (stratovolcanoes): steep, layered; thick viscous lava; violent explosive eruptions (e.g., Mount St Helens, Vesuvius, Pinatubo)
+- Calderas form when a magma chamber collapses after an eruption
+
+Earthquakes:
+- Caused by sudden release of energy along fault lines. Measured by:
+  * Richter scale: logarithmic scale of seismic wave amplitude
+  * Moment magnitude scale (Mw): more accurate for large quakes
+- Focus: where earthquake originates underground; Epicentre: point on surface directly above
+- Primary waves (P-waves): compress rock; travel fastest; pass through solids and liquids
+- Secondary waves (S-waves): shear movement; slower; only travel through solids
+- Surface waves: cause most damage at the surface
+- Tsunamis: triggered by underwater earthquakes (or submarine landslides) displacing water; devastating coastal impacts (Indian Ocean tsunami, 2004; Japan, 2011)
+
+
+3. GEOMORPHOLOGY — LANDFORMS AND PROCESSES
+------------------------------
+Geomorphology studies how landforms are created and changed over time.
+
+Weathering: breakdown of rock in situ (no movement of material):
+- Mechanical/physical weathering: freeze-thaw (water freezes in cracks, expands, shatters rock); exfoliation (heating/cooling causes outer rock layers to peel); pressure release
+- Chemical weathering: carbonation (rainwater + CO2 forms weak carbonic acid; dissolves limestone); hydrolysis (water chemically reacts with minerals); oxidation (iron in rocks reacts with oxygen)
+- Biological weathering: plant roots prise rocks apart; organisms produce acids
+
+Erosion: wearing away and transportation of material by an agent:
+- River erosion processes: hydraulic action, abrasion (corrasion), attrition (stones collide and round), solution (corrosion)
+- Transportation: traction (rolling), saltation (bouncing), suspension (floating), solution (dissolved)
+- Deposition: occurs when the river's energy drops (e.g., on the inside of a meander, on a floodplain, at the coast)
+
+River landforms:
+- Upper course (high altitude, steep gradient): V-shaped valleys, waterfalls, gorges, interlocking spurs
+- Middle course: meanders develop; river erodes laterally; floodplains begin to form
+- Lower course (wide, flat, sea-level): large meanders, oxbow lakes (cut-off meanders), wide floodplains, levées, deltas (sediment deposited at river mouth)
+
+Coastal landforms:
+- Erosional: headlands and bays, cliffs and wave-cut platforms, caves, arches, stacks, stumps (progressive erosion)
+- Depositional: beaches, spits (elongated ridges of sand), bars (spits connecting across a bay), tombolos (connecting island to mainland)
+- Longshore drift: sediment moves along the coast at an angle due to prevailing wave direction; key process in forming spits
+
+Glacial landforms (from Ice Ages):
+- Erosional: corries/cirques (armchair-shaped hollows), arêtes (sharp ridges between corries), pyramidal peaks, U-shaped valleys, truncated spurs, hanging valleys, fjords
+- Depositional: till (unsorted glacial sediment), drumlins (streamlined hills of till), moraines (ridges of till at glacial margins)
+
+
+4. CLIMATE AND WEATHER
+------------------------------
+Weather is the state of the atmosphere at a specific place and time (hours to days). Climate is the average weather conditions over a long period (typically 30 years) for a region.
+
+Factors affecting climate:
+- Latitude: areas near the equator receive more direct solar radiation; temperature decreases with distance from the equator
+- Altitude: temperature decreases by about 6.5°C per 1,000 m above sea level (environmental lapse rate)
+- Proximity to oceans: oceans moderate temperature (maritime climate: mild winters, cool summers); inland areas have more extreme temperatures (continental climate)
+- Ocean currents: warm currents raise coastal temperatures (e.g., North Atlantic Drift warms NW Europe); cold currents cool coasts and suppress rainfall
+- Prevailing winds: onshore winds bring moisture; offshore winds are dry
+- Aspect: south-facing slopes in the northern hemisphere receive more sun
+
+Climate zones:
+- Tropical (equatorial): year-round high temperatures and rainfall; tropical rainforest (Amazon, Congo, SE Asia)
+- Tropical wet-dry (savanna): distinct wet and dry seasons; grasslands with scattered trees
+- Arid and semi-arid: deserts; very little rainfall; extreme temperature ranges; hot deserts (Sahara) and cold deserts (Gobi)
+- Mediterranean: hot, dry summers and mild, wet winters (southern Europe, California)
+- Temperate maritime: mild temperatures, moderate rainfall year-round (NW Europe)
+- Continental: cold winters, hot summers, low precipitation
+- Tundra: very cold, little precipitation, permafrost; Arctic and sub-Arctic regions
+- Polar: permanent ice cover, extreme cold
+
+The Atmosphere:
+Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and about 1% other gases (argon, CO2, water vapour).
+
+Layers: troposphere (weather occurs here, 0–12 km); stratosphere (ozone layer, 12–50 km); mesosphere; thermosphere; exosphere.
+
+The greenhouse effect: solar radiation passes through the atmosphere. Earth absorbs and re-emits it as infrared radiation (heat). Greenhouse gases (CO2, CH4, N2O, water vapour) absorb this heat, warming the Earth. Without any greenhouse effect, Earth's average temperature would be −18°C rather than +15°C.
+
+The enhanced greenhouse effect (climate change) is caused by increased emissions of CO2 (fossil fuel combustion), methane (livestock, landfill, rice paddies), and other gases. Effects include rising temperatures, melting ice caps, sea level rise, more extreme weather events, and shifts in ecosystems.
+
+
+5. CLIMATE CHANGE
+------------------------------
+Evidence for climate change:
+- Rising average global temperatures (approximately +1.2°C above pre-industrial levels by 2023)
+- Melting polar ice sheets and glaciers (Arctic sea ice declining; Greenland and Antarctic ice sheets losing mass)
+- Rising sea levels (~3.6 mm/year currently; from thermal expansion of oceans + meltwater)
+- Changing precipitation patterns and more extreme weather (intense storms, prolonged droughts, flooding)
+- Shifting species ranges and earlier spring seasons
+- Ocean acidification: CO2 dissolves in seawater, forming carbonic acid, threatening coral reefs and marine organisms with calcium carbonate shells
+
+Causes: fossil fuel combustion (electricity, transport, industry), deforestation (trees absorb CO2; their loss both removes a carbon sink and releases stored carbon), agriculture, industrial processes.
+
+Impacts:
+- Environmental: coral reef bleaching and death, loss of Arctic/Antarctic habitats, species extinction, coastal flooding
+- Economic: crop failures, damage from extreme weather, costs of adaptation and mitigation
+- Social: climate refugees, food and water insecurity, health impacts
+
+Responses:
+- Mitigation: reducing emissions — renewable energy (solar, wind, hydro), energy efficiency, electrification of transport, carbon capture, dietary change (reducing meat consumption)
+- Adaptation: sea walls, flood-resistant crops, drought-resistant agriculture, urban heat island management
+- International agreements: Kyoto Protocol (1997), Paris Agreement (2015) — target to limit warming to 1.5°C above pre-industrial levels
+
+
+6. ECOSYSTEMS AND BIOMES
+------------------------------
+An ecosystem is a community of living organisms interacting with each other and their physical environment. Biomes are large-scale ecosystems defined by climate and vegetation.
+
+Food chains and webs:
+- Producers (plants) → Primary consumers (herbivores) → Secondary consumers (carnivores) → Tertiary consumers
+- Energy is lost at each trophic level (about 90% lost as heat, waste, respiration); only ~10% passed on
+- Decomposers (bacteria, fungi) break down dead matter and recycle nutrients
+
+Major biomes:
+- Tropical rainforest: equatorial; year-round warmth and rainfall; highest biodiversity on Earth; multi-layered canopy; very thin soils (nutrients are locked in living vegetation, not soil); threatened by deforestation
+- Savanna: tropical grassland; wet/dry seasons; large herbivores (elephant, zebra, wildebeest), large predators (lion, cheetah)
+- Desert: low rainfall; sparse vegetation; extreme temperatures; specialised adaptations (cacti store water; animals are nocturnal)
+- Temperate grassland: prairies (North America), steppes (Central Asia), pampas (South America); converted largely to farmland
+- Temperate deciduous forest: Europe, eastern North America; seasonal leaf fall; moderate biodiversity
+- Boreal forest (taiga): vast coniferous forests across Russia, Canada, Scandinavia; cold winters
+- Tundra: treeless Arctic plains; permafrost; short growing season; low biodiversity
+- Coral reefs: marine ecosystems of immense biodiversity; built by tiny coral polyps; extremely sensitive to temperature and acidity
+
+Deforestation — causes and consequences:
+- Causes: commercial logging, agricultural expansion (soy, palm oil, cattle ranching), urbanisation, fuelwood collection
+- Consequences: loss of biodiversity, disruption of water cycles (trees recycle rainfall through transpiration), soil erosion, increased CO2 (trees are carbon stores), displacement of indigenous peoples
+
+
+7. RIVERS AND WATER
+------------------------------
+Rivers are essential geographic features, shaping landscapes and supporting human life.
+
+The hydrological cycle (water cycle): continuous movement of water between the atmosphere, land, and oceans. Processes: evaporation, transpiration (together: evapotranspiration), condensation (cloud formation), precipitation (rain, snow), surface runoff, infiltration (water soaks into soil), groundwater flow, and river discharge.
+
+River discharge: volume of water flowing past a point per unit time (m³/s or cumecs). Affected by precipitation, temperature, land use, rock/soil type, and human activity.
+
+Flood hydrographs: graph of river discharge over time following a rainfall event. Key features: lag time (delay between peak rainfall and peak discharge), rising limb, peak discharge, falling limb. Steep hydrographs (short lag time) indicate a flashy catchment — urbanised, impermeable, deforested.
+
+Flood management:
+- Hard engineering: dams and reservoirs (store water, but disrupt ecosystems and displace communities); flood embankments/levées; channel straightening; concrete channelisation
+- Soft engineering: floodplain zoning, afforestation, wetland restoration, flood warnings, managed retreat
+
+Water scarcity: approximately 2 billion people lack access to clean water. Physical water scarcity (arid regions) vs. economic water scarcity (water exists but is inaccessible due to poverty/infrastructure). Increasing with climate change, population growth, and pollution.
+
+
+8. POPULATION GEOGRAPHY
+------------------------------
+World population reached approximately 8 billion in 2022. Growth has been dramatic since the Industrial Revolution — from ~1 billion in 1800 to 2.5 billion in 1950 to 8 billion today.
+
+Demographic concepts:
+- Birth rate (CBR): number of live births per 1,000 people per year
+- Death rate (CDR): number of deaths per 1,000 people per year
+- Natural increase rate = CBR − CDR
+- Fertility rate (TFR): average number of children per woman
+- Life expectancy: average number of years expected at birth
+- Infant mortality rate: deaths of children under 1 per 1,000 live births
+
+Demographic Transition Model (DTM): a model showing how populations change as countries develop through stages:
+- Stage 1: high birth rate, high death rate, low/stable population (pre-industrial)
+- Stage 2: high birth rate, falling death rate (improved sanitation, medicine) → rapid population growth (many LDCs in 20th century)
+- Stage 3: falling birth rate (urbanisation, women's education, contraception), falling death rate → slower growth
+- Stage 4: low birth rate, low death rate → slow growth or stability (most developed countries today)
+- Stage 5 (proposed): very low birth rate below death rate → population decline (e.g., Japan, parts of Europe)
+
+Population distribution: uneven globally. Dense populations: East and South Asia, Europe, eastern USA. Sparse: deserts, tundra, dense tropical forests. Factors: climate, water availability, terrain, soils, historical settlement, economic opportunity.
+
+Ageing populations (challenge in developed world): rising proportion of elderly people, pressure on pension systems and healthcare, shrinking workforce. Responses: immigration, pro-natalist policies, raising retirement age.
+
+Youth bulges (challenge in developing world): rapid population growth with large proportion of young people — requires huge expansion in education, healthcare, and jobs.
+
+
+9. MIGRATION
+------------------------------
+Migration is the movement of people from one place to another, intending to settle in the new location.
+
+Types:
+- International migration: across national borders; immigration (moving in), emigration (moving out)
+- Internal migration: within a country (e.g., rural to urban)
+- Forced migration: displacement due to war, persecution, environmental disaster (refugees, internally displaced persons — IDPs)
+- Voluntary migration: by choice, motivated by economic opportunity
+
+Push and pull factors:
+- Push factors (reasons to leave): unemployment, poverty, conflict, natural disasters, political persecution, environmental degradation
+- Pull factors (reasons to move to): job opportunities, higher wages, better education and healthcare, safety, family ties
+
+Major migration patterns:
+- Historical: European colonisation; transatlantic slave trade; post-WWII labour migration (e.g., Windrush generation to UK)
+- Contemporary: large-scale movements from Global South to Global North; Syrian refugee crisis (2015 onward); climate-induced displacement
+
+Impacts of migration:
+- On source country: loss of working-age population (brain drain), remittances (money sent home) boost local economies, reduced population pressure
+- On destination country: fills labour shortages, cultural diversity, pressure on services, political tensions around immigration
+
+According to UNHCR, there are over 100 million forcibly displaced people globally (as of 2022) — the highest ever recorded.
+
+
+10. URBANISATION
+------------------------------
+Urbanisation is the increasing proportion of a country's population living in urban areas. Currently, over 55% of the world's population is urban; by 2050, this is projected to reach 68%.
+
+Urbanisation trends:
+- High-income countries urbanised during the 19th–20th centuries
+- Rapid urbanisation today is concentrated in low- and middle-income countries (Africa, South Asia, Southeast Asia)
+
+Urban growth: increase in the size or number of urban areas. Driven by: rural-to-urban migration and natural increase within cities.
+
+Megacities: cities with over 10 million people. Examples: Tokyo (~37 million), Delhi, Shanghai, Dhaka, São Paulo, Mexico City, Cairo. Most recent growth of megacities is in the Global South.
+
+Urban problems in rapidly growing cities:
+- Informal settlements (slums, shanty towns, favelas): lack of formal housing, poor sanitation, insecure land tenure. Examples: Dharavi (Mumbai), Kibera (Nairobi), Rocinha (Rio de Janeiro). Over 1 billion people globally live in slums.
+- Traffic congestion, air pollution, water and energy shortages
+- Unemployment, crime, social inequality
+
+Urban issues in high-income countries:
+- Urban decline/deindustrialisation: loss of manufacturing → unemployment, deprivation
+- Suburbanisation and counter-urbanisation: people move out of city centres → urban sprawl, traffic congestion
+- Gentrification: wealthier residents move into deprived areas → rising property prices, displacement of existing communities
+
+Sustainable urban development:
+- Green spaces, urban parks, green roofs
+- Public transport, cycling infrastructure, walkable design
+- Energy-efficient buildings, smart city technology
+- Waste management and recycling
+- Community participation in planning
+Example: Curitiba (Brazil) is widely cited as a model sustainable city (efficient bus rapid transit system, widespread green spaces, strong recycling programme).
+
+
+11. ECONOMIC DEVELOPMENT AND GLOBALISATION
+------------------------------
+Economic development refers to improvements in living standards, income, healthcare, education, and opportunity over time.
+
+Measuring development:
+- GDP per capita: average economic output per person — measures income but not inequality or wellbeing
+- Human Development Index (HDI): combines income, education (years of schooling), and life expectancy. Scale 0–1; >0.8 = very high development
+- Inequalities: Gini coefficient measures income inequality within countries
+- Limitations: averages mask inequality; growth doesn't always equal development (environmental costs, gender inequality, etc.)
+
+Classification of countries:
+- Historically: LEDCs (Less Economically Developed Countries) vs. MEDCs (More Economically Developed Countries)
+- More recently: High-income, Upper-middle-income, Lower-middle-income, Low-income countries (World Bank classification)
+- NICs (Newly Industrialising Countries): e.g., South Korea, Taiwan, Brazil, Mexico — rapidly industrialised since 1970s
+- BRICs: Brazil, Russia, India, China — large emerging economies
+
+Theories of development:
+- Rostow's stages of growth: countries pass through five stages from traditional society to mass consumption (linear model)
+- Dependency theory: argues Global South is kept underdeveloped by its dependent relationship with Global North (through trade, debt, and colonial history)
+
+Globalisation: increasing interconnection of the world's economies, cultures, and peoples through trade, investment, technology, and migration.
+
+Causes: containerisation (shipping revolution), the internet and telecommunications, deregulation of trade (WTO, free trade agreements), growth of multinational corporations (MNCs).
+
+Effects:
+- Economic: faster growth, lower consumer prices, global supply chains; but also job losses in deindustrialised countries, exploitation of cheap labour
+- Cultural: spread of Western culture (McDonaldisation), loss of cultural diversity, but also rich cultural exchange
+- Environmental: increased carbon emissions from global trade, pollution in export-focused countries
+
+Transnational corporations (TNCs): companies operating in multiple countries. Examples: Apple, Nike, Shell, Unilever. They can boost host economies through investment and jobs but may exploit lower environmental/labour standards.
+
+
+12. RESOURCE MANAGEMENT
+------------------------------
+Resources: natural materials that humans use. Renewable resources: naturally replenished (sun, wind, water, timber if managed sustainably). Non-renewable: finite supply (fossil fuels, minerals).
+
+Energy:
+- Fossil fuels (coal, oil, natural gas) supply ~80% of global energy. They are non-renewable and the main driver of climate change.
+- Renewable energy: solar PV, wind turbines, hydroelectric power (HEP), geothermal, tidal. Growing rapidly — cost of solar and wind has fallen dramatically.
+- Nuclear energy: low carbon but produces radioactive waste; concerns about safety and cost
+- Energy security: access to reliable, affordable energy. Countries with few domestic resources are vulnerable to supply disruptions.
+
+Water:
+- Only 2.5% of Earth's water is fresh; most is frozen in glaciers or deep underground. Less than 1% is readily accessible.
+- Demand rising due to population growth, irrigation (agriculture uses ~70% of fresh water globally), and industrialisation
+- Water stress and conflict: some regions face severe scarcity; water has caused and will cause geopolitical tensions (e.g., Nile River — disputes between Ethiopia, Sudan, Egypt)
+
+Food:
+- Global food production has grown enormously since the Green Revolution (1960s–70s) — improved crop varieties, fertilisers, pesticides, irrigation
+- Yet around 800 million people are chronically undernourished; malnutrition affects billions more
+- Food security: having reliable access to sufficient, nutritious food. Threatened by: population growth, climate change, land degradation, conflict, waste (approximately one-third of food produced globally is lost or wasted)
+- Sustainable agriculture: reducing chemical inputs, protecting soils, crop rotation, agroforestry, reduced meat consumption, local/seasonal food
+
+Sustainable development: development that meets the needs of the present without compromising the ability of future generations to meet their own needs (Brundtland Commission definition, 1987). The UN's 17 Sustainable Development Goals (SDGs, adopted 2015) provide a global framework targeting poverty, inequality, health, education, climate, and sustainability by 2030.

@@ -1,9 +1,282 @@
-Physics is the study of matter, energy, space, and time, and the fundamental forces that govern them. It seeks to understand how the universe works at every scale, from subatomic particles to galaxies. Physics underpins all natural sciences and drives advances in technology and engineering.
+PHYSICS - COMPREHENSIVE STUDY NOTES
+======================================
 
-Motion is described using quantities such as displacement, speed, velocity, and acceleration. Newton's three laws of motion form the foundation of classical mechanics. The first law states that an object remains at rest or in uniform motion unless acted upon by a net external force. The second law relates force, mass, and acceleration: F = ma. The third law states that every action has an equal and opposite reaction.
+1. INTRODUCTION TO PHYSICS
+------------------------------
+Physics is the fundamental natural science that seeks to understand the laws governing matter, energy, space, and time. It explores phenomena ranging from the behaviour of subatomic particles to the large-scale structure of the universe. Physics is the foundation upon which chemistry, engineering, astronomy, and materials science are built.
 
-Energy exists in many forms including kinetic, potential, thermal, electrical, chemical, and nuclear energy. The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Work is done when a force moves an object through a distance, and power is the rate at which work is done.
+Major branches include:
+- Classical Mechanics: motion and forces at everyday speeds and sizes
+- Thermodynamics: heat, temperature, and energy transfer
+- Electromagnetism: electricity, magnetism, and light
+- Optics: behaviour of light
+- Wave Physics: sound, light, and all wave phenomena
+- Quantum Mechanics: behaviour of particles at atomic and subatomic scales
+- Relativity: space, time, and motion near the speed of light
+- Nuclear and Particle Physics: atomic nuclei and fundamental particles
+- Astrophysics/Cosmology: structure and evolution of the universe
 
-Waves transfer energy without transferring matter. They can be transverse, like light waves, or longitudinal, like sound waves. Key wave properties include amplitude, wavelength, frequency, and speed. The electromagnetic spectrum includes radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays, all travelling at the speed of light in a vacuum.
 
-Electricity and magnetism are closely related. Electric current is the flow of charge, and it is driven by voltage through a conductor with resistance, as described by Ohm's law: V = IR. Magnetic fields are produced by moving charges. Modern physics extends into quantum mechanics, which describes behaviour at atomic scales, and relativity, which addresses motion at speeds approaching the speed of light.
+2. MEASUREMENTS AND UNITS
+------------------------------
+Physics relies on precise measurement. The SI (Système International) system is the standard framework:
+- Metre (m): length
+- Kilogram (kg): mass
+- Second (s): time
+- Ampere (A): electric current
+- Kelvin (K): temperature
+- Mole (mol): amount of substance
+- Candela (cd): luminous intensity
+
+Derived units are combinations of base units: m/s (speed), m/s² (acceleration), kg·m/s² = Newton (force), kg·m²/s² = Joule (energy).
+
+Significant figures reflect the precision of a measurement. Scientific notation (e.g., 3.0 × 10⁸ m/s) is used for very large or small quantities. Prefixes: kilo (10³), mega (10⁶), giga (10⁹), milli (10⁻³), micro (10⁻⁶), nano (10⁻⁹).
+
+
+3. KINEMATICS — DESCRIBING MOTION
+------------------------------
+Kinematics describes motion without considering its causes.
+
+Key quantities:
+- Distance: total path length (scalar)
+- Displacement: straight-line distance from start to finish, with direction (vector)
+- Speed: distance per unit time (scalar), average speed = distance / time
+- Velocity: displacement per unit time (vector), v = Δs / Δt
+- Acceleration: rate of change of velocity, a = Δv / Δt (vector)
+
+Equations of uniform acceleration (SUVAT equations):
+- v = u + at
+- s = ut + ½at²
+- v² = u² + 2as
+- s = ½(u + v)t
+where u = initial velocity, v = final velocity, a = acceleration, t = time, s = displacement
+
+Free fall: objects in free fall near Earth's surface accelerate at g ≈ 9.8 m/s² (ignoring air resistance). All objects fall at the same rate regardless of mass (Galileo's finding).
+
+Projectile motion: a combination of horizontal uniform motion and vertical free fall. The two components are independent of each other.
+
+Distance-time graphs: gradient = speed. Velocity-time graphs: gradient = acceleration, area under graph = displacement.
+
+
+4. NEWTON'S LAWS OF MOTION AND FORCES
+------------------------------
+Newton's three laws underpin classical mechanics:
+
+First Law (Inertia): An object remains at rest or in uniform motion in a straight line unless acted upon by a resultant (net) external force. Inertia is the tendency to resist changes in motion.
+
+Second Law: The resultant force on an object equals the product of its mass and acceleration: F = ma. Force is measured in Newtons (N = kg·m/s²). This law explains how forces change motion.
+
+Third Law: For every action, there is an equal and opposite reaction. Forces always come in pairs acting on different objects (e.g., rocket exhaust pushes down → rocket is pushed up).
+
+Types of forces:
+- Gravity (weight): W = mg, acts downward toward Earth's centre
+- Normal force: perpendicular reaction from a surface
+- Friction: opposes relative motion between surfaces; depends on surface type and normal force
+- Tension: pulling force through a string or rope
+- Air resistance (drag): opposes motion through air; depends on speed and cross-sectional area
+- Upthrust / Buoyancy: upward force on an object submerged in fluid (Archimedes' principle)
+
+A free body diagram shows all forces acting on a single object. When forces balance (resultant = 0), the object is in equilibrium.
+
+Newton's Law of Universal Gravitation: every mass attracts every other mass with a force F = Gm₁m₂/r², where G = 6.674 × 10⁻¹¹ N·m²/kg² is the gravitational constant.
+
+
+5. ENERGY, WORK, AND POWER
+------------------------------
+Energy is the capacity to do work. The SI unit is the Joule (J).
+
+Work (W) is done when a force causes displacement in the direction of the force: W = Fd cosθ. No work is done if force and displacement are perpendicular.
+
+Forms of energy:
+- Kinetic energy (KE): energy of motion — KE = ½mv²
+- Gravitational potential energy (GPE): energy stored due to height — GPE = mgh
+- Elastic potential energy: stored in stretched/compressed springs — E = ½kx²
+- Thermal (heat) energy: internal energy related to particle motion
+- Chemical energy: stored in chemical bonds
+- Electrical energy: associated with electric charges
+- Nuclear energy: stored in atomic nuclei
+
+Law of Conservation of Energy: energy cannot be created or destroyed, only transformed from one form to another. Total energy in a closed system remains constant.
+
+Power is the rate of doing work or transferring energy: P = W/t = Fv. Unit: Watt (W = J/s).
+
+Efficiency = (useful output energy / total input energy) × 100%
+
+The work-energy theorem: the net work done on an object equals its change in kinetic energy.
+
+
+6. MOMENTUM AND IMPULSE
+------------------------------
+Momentum (p) is the product of mass and velocity: p = mv. It is a vector quantity. Unit: kg·m/s.
+
+Law of Conservation of Momentum: in a closed system with no external forces, the total momentum before a collision equals total momentum after. This applies to all types of collisions.
+
+Types of collisions:
+- Elastic: both momentum and kinetic energy are conserved (e.g., billiard balls)
+- Inelastic: momentum is conserved but kinetic energy is not (converted to heat/sound)
+- Perfectly inelastic: objects stick together after collision — maximum kinetic energy loss
+
+Impulse = change in momentum: J = Δp = FΔt. A larger time for the same force change results in a smaller average force (e.g., airbags, crumple zones in cars).
+
+Newton's second law can also be expressed as F = Δp/Δt — force equals rate of change of momentum.
+
+
+7. CIRCULAR MOTION AND GRAVITATION
+------------------------------
+An object moving in a circle at constant speed is still accelerating because its direction changes. This centripetal acceleration points toward the centre: a = v²/r.
+
+The centripetal force required is: F = mv²/r = mω²r, where ω is angular velocity. This force is not a new type of force — it is provided by existing forces (gravity, tension, friction, etc.).
+
+Angular velocity ω = 2πf = 2π/T, where f is frequency and T is period.
+
+Gravitational fields: all masses create gravitational fields. Earth's gravitational field strength g ≈ 9.8 N/kg at the surface. It decreases with distance according to Newton's inverse square law.
+
+Orbital motion: satellites orbit because gravity provides the centripetal force. For a circular orbit: GMm/r² = mv²/r, giving v = √(GM/r). Geostationary satellites orbit at ~36,000 km with T = 24 hours and are used for communications and weather observation.
+
+Escape velocity: the minimum speed needed to escape a gravitational field — v = √(2GM/r).
+
+
+8. WAVES
+------------------------------
+Waves transfer energy without transferring matter. The medium oscillates around equilibrium while the wave pattern moves forward.
+
+Types:
+- Transverse waves: oscillations perpendicular to the direction of wave travel (e.g., light, water waves, EM waves)
+- Longitudinal waves: oscillations parallel to the direction of travel (e.g., sound, ultrasound)
+
+Key wave properties:
+- Amplitude (A): maximum displacement from equilibrium (related to energy/loudness/brightness)
+- Wavelength (λ): distance between two adjacent identical points (e.g., crest to crest)
+- Frequency (f): number of complete oscillations per second (Hz)
+- Period (T = 1/f): time for one complete oscillation
+- Wave speed: v = fλ
+
+Wave phenomena:
+- Reflection: bouncing off a surface — angle of incidence = angle of reflection
+- Refraction: change in speed (and wavelength) as a wave crosses a boundary; direction changes unless wave hits perpendicularly
+- Diffraction: spreading of waves around obstacles or through gaps; most pronounced when gap size ≈ wavelength
+- Interference: superposition of two waves — constructive (amplitudes add) or destructive (amplitudes cancel)
+- Doppler effect: apparent change in frequency when source and observer are in relative motion (e.g., ambulance siren)
+
+Standing waves form when two identical waves travel in opposite directions and superpose. Nodes (zero displacement) and antinodes (maximum displacement) are fixed points.
+
+
+9. SOUND
+------------------------------
+Sound is a longitudinal mechanical wave that requires a medium. It travels fastest in solids, slower in liquids, and slowest in gases (≈340 m/s in air at room temperature). Sound cannot travel through a vacuum.
+
+The frequency of sound corresponds to pitch; amplitude corresponds to loudness (measured in decibels, dB). The range of human hearing is approximately 20 Hz to 20,000 Hz. Ultrasound (>20,000 Hz) is used in medical imaging (echoes) and sonar.
+
+Resonance occurs when a system is driven at its natural frequency, causing large amplitude oscillations. This is exploited in musical instruments (tuned air columns and strings).
+
+The speed of sound: v = √(B/ρ), where B is bulk modulus and ρ is density. Speed increases with temperature in gases.
+
+
+10. LIGHT AND THE ELECTROMAGNETIC SPECTRUM
+------------------------------
+Light is a transverse electromagnetic wave that does not require a medium. All electromagnetic (EM) waves travel at c = 3 × 10⁸ m/s in a vacuum.
+
+The electromagnetic spectrum (from longest wavelength/lowest frequency to shortest/highest):
+- Radio waves: communication, broadcasting
+- Microwaves: cooking, satellite communications
+- Infrared (IR): heat radiation, night vision, remote controls
+- Visible light: human vision, wavelength ≈ 400–700 nm (violet to red)
+- Ultraviolet (UV): causes sunburn, used in sterilisation; fluorescent dyes
+- X-rays: medical imaging, airport security; ionising radiation
+- Gamma rays: nuclear decay, cancer treatment; most penetrating ionising radiation
+
+Reflection: Light obeys the law of reflection. Plane mirrors form virtual, upright, same-size images behind the mirror.
+
+Refraction: Light slows down in denser media, bending toward the normal. Snell's law: n₁ sinθ₁ = n₂ sinθ₂. The refractive index n = c/v. Total internal reflection occurs when light travels from a denser medium at an angle greater than the critical angle — used in optical fibres and diamond cutting.
+
+Lenses:
+- Convex (converging) lenses focus parallel light to a focal point. Used in glasses, cameras, microscopes.
+- Concave (diverging) lenses spread light outward. Used to correct short-sightedness.
+Lens equation: 1/f = 1/v − 1/u; magnification = image height / object height = v/u.
+
+Dispersion: white light splits into its spectrum when passing through a prism because different wavelengths travel at slightly different speeds in glass (different refractive indices). Red light deviates least; violet most.
+
+
+11. ELECTRICITY
+------------------------------
+Electric current (I) is the rate of flow of charge: I = Q/t. Measured in amperes (A).
+
+Voltage (potential difference, V) is the energy transferred per unit charge: V = W/Q. Measured in volts (V).
+
+Resistance (R) opposes current flow. Ohm's Law: V = IR (valid for ohmic conductors at constant temperature). Resistance is measured in ohms (Ω).
+
+Power: P = IV = I²R = V²/R
+
+Resistance in circuits:
+- Series: R_total = R1 + R2 + R3 (same current through all; voltages add)
+- Parallel: 1/R_total = 1/R1 + 1/R2 + 1/R3 (same voltage across all; currents add)
+
+Kirchhoff's Laws:
+- Current Law (KCL): the sum of currents entering a junction equals the sum leaving
+- Voltage Law (KVL): the sum of EMFs around any closed loop equals the sum of voltage drops
+
+Components: resistors, capacitors (store charge, Q = CV), diodes (allow current in one direction), transistors (amplify/switch signals), LEDs, LDRs (light-dependent resistors), thermistors.
+
+Alternating current (AC): current that periodically reverses direction (e.g., mains electricity at 50 Hz in the UK). Direct current (DC) flows in one direction (e.g., batteries). Transformers change AC voltage using electromagnetic induction: Vp/Vs = Np/Ns.
+
+
+12. MAGNETISM AND ELECTROMAGNETISM
+------------------------------
+Magnets have north and south poles; like poles repel, unlike poles attract. Magnetic field lines go from north to south outside the magnet. The Earth has a magnetic field, with the geographic North Pole near the magnetic South Pole.
+
+Electromagnetism: moving electric charges produce magnetic fields. A current-carrying wire creates a circular magnetic field around it (right-hand rule / corkscrew rule). Increasing current or winding wire into a coil (solenoid) strengthens the field. Electromagnets are solenoids with soft iron cores.
+
+Electromagnetic induction (Faraday's Law): a changing magnetic flux through a conductor induces an EMF (voltage). EMF = −dΦ/dt. Lenz's law: the induced current opposes the change that caused it. This is the basis for:
+- Generators (mechanical → electrical energy)
+- Transformers (change AC voltage levels)
+- Induction chargers and transformers
+
+The motor effect: a current-carrying conductor in a magnetic field experiences a force F = BIL sinθ. Used in electric motors (electrical → mechanical energy).
+
+The Hall effect and MRI machines are practical applications of electromagnetism.
+
+
+13. NUCLEAR PHYSICS
+------------------------------
+The atomic nucleus contains protons and neutrons (nucleons) held together by the strong nuclear force — a short-range force much stronger than the electromagnetic repulsion between protons.
+
+Radioactive decay: unstable nuclei emit radiation to become more stable. Three main types:
+- Alpha (α) decay: emission of a helium nucleus (2 protons, 2 neutrons); stopped by paper; highly ionising; dangerous if ingested
+- Beta (β) decay: a neutron converts to a proton + electron (β−) or proton to neutron + positron (β+); stopped by thin aluminium
+- Gamma (γ) radiation: high-energy electromagnetic wave emitted alongside α or β; stopped by thick lead; least ionising
+
+Half-life: the time for half the radioactive nuclei in a sample to decay. It is constant for a given isotope and independent of external conditions. Used in carbon-14 dating (archaeology) and uranium-lead dating (geology).
+
+Nuclear fission: heavy nuclei (e.g., U-235, Pu-239) split into smaller nuclei when struck by neutrons, releasing large amounts of energy. Chain reactions are used in nuclear power stations (controlled) and atomic bombs (uncontrolled). Einstein's equation: E = mc² relates mass and energy.
+
+Nuclear fusion: light nuclei (e.g., hydrogen isotopes — deuterium, tritium) combine at extremely high temperatures to form heavier nuclei, releasing even more energy per unit mass than fission. Powers the Sun. Research into fusion as a clean energy source is ongoing (ITER project).
+
+
+14. QUANTUM PHYSICS
+------------------------------
+Quantum mechanics describes nature at the atomic and subatomic scale. Classical physics fails at this scale.
+
+Wave-particle duality: light behaves as both a wave (diffraction, interference) and a particle (photons — the photoelectric effect). Matter particles also exhibit wave properties (de Broglie wavelength: λ = h/mv).
+
+The photoelectric effect: light above a threshold frequency can eject electrons from a metal surface. Einstein explained this by proposing that light comes in discrete packets called photons, each with energy E = hf, where h = 6.626 × 10⁻³⁴ J·s is Planck's constant.
+
+Atomic energy levels: electrons in atoms occupy discrete energy levels. When an electron transitions between levels, a photon of specific frequency is absorbed or emitted, producing spectral lines unique to each element. Emission spectra → bright lines; absorption spectra → dark lines.
+
+The Heisenberg Uncertainty Principle: it is impossible to simultaneously know both the exact position and momentum of a particle — Δx · Δp ≥ h/4π.
+
+Quantum tunnelling: particles can pass through potential energy barriers they classically should not be able to cross. This occurs in nuclear fusion, transistors (tunnel diodes), and scanning tunnelling microscopes.
+
+
+15. RELATIVITY
+------------------------------
+Special Relativity (Einstein, 1905) applies when objects move at speeds comparable to the speed of light (c = 3 × 10⁸ m/s):
+- The speed of light is constant for all observers regardless of motion
+- Time dilation: moving clocks run slow — t' = t / √(1 − v²/c²)
+- Length contraction: moving objects are shorter in the direction of motion
+- Mass-energy equivalence: E = mc² — mass and energy are interchangeable
+
+General Relativity (Einstein, 1915) extends these ideas to accelerating frames and gravity:
+- Gravity is the curvature of spacetime caused by mass and energy
+- Light bends around massive objects (gravitational lensing)
+- Black holes are regions where spacetime curvature is so extreme that not even light can escape
+- Gravitational waves — ripples in spacetime — were detected for the first time in 2015 by LIGO

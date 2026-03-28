@@ -1,9 +1,258 @@
-History is the study of past events, societies, and human behaviour over time. Historians use primary sources such as documents, letters, and artefacts, as well as secondary sources, to reconstruct and interpret the past. Understanding history helps explain the origins of present-day societies, conflicts, and institutions.
+HISTORY - COMPREHENSIVE STUDY NOTES
+======================================
 
-The earliest civilisations emerged around 3500 BCE in Mesopotamia (modern Iraq) and the Nile Valley. These societies developed writing, legal codes, monumental architecture, and organised religion. The Code of Hammurabi in Babylon was one of the earliest written sets of laws. Ancient Egypt, Greece, and Rome each made lasting contributions to governance, philosophy, art, and engineering that shaped Western civilisation.
+1. INTRODUCTION TO THE STUDY OF HISTORY
+------------------------------
+History is the systematic study of the past — events, people, societies, ideas, and processes that have shaped the human world over time. Historians reconstruct the past through:
+- Primary sources: original materials from the period under study (documents, diaries, letters, artefacts, official records, photographs, oral testimonies)
+- Secondary sources: analyses or interpretations of primary sources written after the fact (history books, academic articles, documentaries)
 
-The Middle Ages in Europe (roughly 500 to 1500 CE) were characterised by feudalism, the dominance of the Catholic Church, and the fragmentation of political power following the collapse of the Western Roman Empire. The Crusades, the Black Death, and the Magna Carta were defining events of this era. Meanwhile, Islamic scholars preserved and advanced knowledge in mathematics, astronomy, and medicine during Europe's medieval period.
+Historical thinking requires consideration of:
+- Causation: why events happened
+- Consequence: what resulted from events
+- Change and continuity: what changed and what stayed the same
+- Historical significance: why events matter
+- Historical perspective and empathy: understanding past actors in their own context
+- Source analysis: evaluating bias, reliability, purpose, and limitations of sources
 
-The early modern period brought the Renaissance, the Reformation, and European exploration and colonisation. The Renaissance revived classical learning and produced extraordinary achievements in art and science. The Protestant Reformation challenged papal authority and reshaped European Christianity. European powers colonised vast territories across the Americas, Africa, and Asia, with profound and often devastating consequences for indigenous peoples.
 
-Modern history from the 18th century onward includes the Age of Revolutions, industrialisation, imperialism, and two devastating world wars. The French and American Revolutions promoted ideals of liberty and democracy. The Industrial Revolution transformed economies and society. The First and Second World Wars reshaped global borders and led to the formation of the United Nations. The 20th century also saw decolonisation, the Cold War, and rapid technological advancement.
+2. PREHISTORIC PERIOD AND THE FIRST CIVILISATIONS (before 3000 BCE)
+------------------------------
+Homo sapiens evolved in Africa approximately 300,000 years ago. For most of human prehistory, people lived as hunter-gatherers in small nomadic bands. During the Palaeolithic ("Old Stone Age"), humans developed tools, fire, language, and art (e.g., cave paintings at Lascaux, France, c. 17,000 BCE).
+
+The Neolithic Revolution (c. 10,000 BCE): the transition from hunting/gathering to farming. In the "Fertile Crescent" (modern Iraq, Syria, Turkey, and surrounding areas), humans began cultivating wheat and barley and domesticating animals. This allowed settled communities, population growth, surplus food, and social specialisation.
+
+First Civilisations arose in river valleys where fertile soil and reliable water supported dense populations:
+- Mesopotamia (Tigris and Euphrates rivers, modern Iraq): Sumerians developed the first writing system (cuneiform, c. 3200 BCE), city-states, and organised religion. The Akkadian Empire under Sargon I was among the world's first empires.
+- Ancient Egypt (Nile Valley, c. 3100 BCE): united under Pharaoh Narmer; built massive pyramids (Giza, c. 2560 BCE); developed hieroglyphics and papyrus; believed pharaohs were divine. The Old, Middle, and New Kingdoms alternated with periods of instability.
+- Indus Valley Civilisation (modern Pakistan/northwest India, c. 2500 BCE): planned cities (Harappa, Mohenjo-daro) with sophisticated drainage systems; trading network across the region.
+- Ancient China (Yellow River, c. 2000 BCE): Shang Dynasty developed early Chinese writing and bronze casting.
+
+The Code of Hammurabi (c. 1754 BCE): one of the earliest written legal codes, issued by Babylonian king Hammurabi. Established the principle of lex talionis ("eye for an eye") and regulated trade, property, and family life.
+
+
+3. ANCIENT GREECE (c. 800 – 323 BCE)
+------------------------------
+Ancient Greece was not a unified state but a collection of independent city-states (poleis). Major city-states included Athens, Sparta, Corinth, and Thebes.
+
+Athens: birthplace of democracy. Under Cleisthenes (508 BCE), Athens developed direct democracy — citizens voted directly on laws. Notable Athenians include Pericles (statesman), Socrates, Plato, and Aristotle (philosophers). Athens was a cultural and intellectual powerhouse.
+
+Sparta: militaristic city-state with a highly disciplined society. Spartan boys entered military training (agoge) at age 7. Women had more independence than in other Greek cities. Sparta and Athens frequently competed and eventually fought the Peloponnesian War (431–404 BCE), which Sparta won.
+
+Persian Wars (499–449 BCE): the Greek city-states (led by Athens and Sparta) repelled two invasions by the Persian Empire. Key battles: Marathon (490 BCE), Thermopylae (480 BCE — Spartan "last stand"), and Salamis (480 BCE naval victory).
+
+Alexander the Great (336–323 BCE): Macedonian king who conquered a vast empire stretching from Greece through Persia, Egypt, and as far as modern Pakistan. He spread Hellenistic (Greek-influenced) culture across the ancient world. His conquests created a new cultural zone blending Greek, Egyptian, Persian, and Indian elements.
+
+Greek contributions to civilisation:
+- Philosophy: Socratic method, Platonic idealism, Aristotelian logic
+- Science and mathematics: Euclid (geometry), Pythagoras, Archimedes, Hippocrates (medicine)
+- Literature: Homer's Iliad and Odyssey; tragic playwrights (Sophocles, Euripides, Aeschylus)
+- Democracy, rhetoric, and civic governance
+
+
+4. ANCIENT ROME (c. 753 BCE – 476 CE)
+------------------------------
+According to legend, Rome was founded in 753 BCE. The Roman Republic (509–27 BCE) was governed by elected magistrates (consuls), a Senate, and popular assemblies. Roman law, military discipline, and engineering enabled rapid expansion across the Mediterranean world.
+
+Key events of the Republic:
+- Punic Wars (264–146 BCE): three wars against Carthage (North Africa). Hannibal famously crossed the Alps with elephants to invade Italy (218 BCE). Rome eventually destroyed Carthage.
+- Conquest of Greece and the Hellenistic world brought Greek culture to Rome.
+- The late Republic was marked by civil wars and the rise of powerful generals: Marius, Sulla, Pompey, Julius Caesar.
+- Julius Caesar (dictator 49–44 BCE): conquered Gaul (modern France); crossed the Rubicon; was assassinated on the Ides of March (44 BCE) by senators led by Brutus and Cassius.
+
+The Roman Empire (27 BCE – 476 CE):
+- After Caesar's assassination, civil wars ended with Octavian (Augustus) becoming the first emperor in 27 BCE.
+- At its height under Trajan (c. 117 CE), Rome controlled Britain, Iberia, North Africa, Egypt, the Middle East, and most of Europe.
+- Roman achievements: roads, aqueducts, concrete architecture, legal codes (Roman Law is the basis of many modern legal systems), Latin language, the spread of Christianity.
+- Constantine I (313 CE) legalised Christianity. Theodosius made it the official religion in 380 CE.
+- Decline: the empire faced military pressure from Germanic tribes, economic strain, corruption, and over-extension. The western half fell in 476 CE when Romulus Augustulus was deposed by the Visigoth chieftain Odoacer. The Eastern Roman (Byzantine) Empire continued until 1453 CE.
+
+
+5. THE MIDDLE AGES (c. 500 – 1500 CE)
+------------------------------
+The fall of the Western Roman Empire led to fragmented political power in Europe. This era is divided into the Early, High, and Late Middle Ages.
+
+Feudalism: the dominant political and social system. The king granted land (fiefs) to powerful lords (barons, nobles) in exchange for military service. Lords granted portions to knights, who in turn had peasants (serfs) work the land. Society was hierarchical and largely agricultural.
+
+The Catholic Church dominated spiritual and intellectual life. The Pope held tremendous authority, crowning kings and wielding political power. Monasteries preserved classical knowledge and were centres of learning.
+
+The Crusades (1095–1291): a series of religious military campaigns launched by the Pope to reclaim the Holy Land (Jerusalem) from Muslim rule. The First Crusade (1096–1099) successfully captured Jerusalem. Later Crusades largely failed, but the campaigns increased European contact with the Islamic world, facilitating trade and the exchange of knowledge.
+
+Islamic Golden Age (8th–13th centuries): while Europe was in its medieval period, Islamic scholars in Baghdad, Cairo, and Cordoba made major advances in mathematics (algebra — from Arabic "al-jabr"), astronomy, medicine, optics, and philosophy. Scholars like Al-Khwarizmi, Avicenna, and Ibn Rushd preserved and expanded on Greek knowledge.
+
+The Black Death (1347–1351): a devastating epidemic of bubonic plague that killed approximately one-third of Europe's population. It had profound social consequences: labour shortages, breakdown of feudal relations, and increased questioning of Church authority.
+
+The Magna Carta (1215): signed by King John of England under pressure from rebellious barons. It established that the monarch was subject to the rule of law — a cornerstone document in the development of constitutional governance and individual rights.
+
+The Hundred Years' War (1337–1453): conflict between England and France over the French throne. Joan of Arc, a young peasant girl claiming divine guidance, led French forces to key victories before being captured, tried for heresy, and burned at the stake in 1431. France ultimately expelled the English.
+
+
+6. THE RENAISSANCE AND THE REFORMATION (c. 1300 – 1600)
+------------------------------
+The Renaissance (French: "rebirth") was a cultural and intellectual movement originating in Italian city-states (Florence, Venice, Rome) that spread across Europe from the 14th to 17th centuries.
+
+Key features:
+- Revival of classical Greek and Roman texts and values (humanism)
+- Emphasis on individual potential, secular subjects, and reason
+- Explosion of artistic achievement: Leonardo da Vinci (art, science, engineering), Michelangelo (Sistine Chapel, David), Raphael, Donatello; in literature: Dante, Petrarch, Machiavelli; in science: Copernicus proposed heliocentrism
+- The printing press (Gutenberg, c. 1440) revolutionised communication, enabling ideas to spread rapidly across Europe
+
+The Protestant Reformation (1517):
+Martin Luther, a German monk, challenged the Catholic Church by nailing his 95 Theses to a church door in Wittenberg, condemning the sale of indulgences and other corrupt practices. He argued that salvation came through faith alone (sola fide), not Church rituals.
+
+His ideas spread rapidly (helped by the printing press). The result was a permanent split in Western Christianity:
+- Lutheranism (Germany, Scandinavia)
+- Calvinism (Switzerland, Netherlands, Scotland) — founded by John Calvin; emphasised predestination
+- Church of England (Anglicanism) — founded by Henry VIII who broke with Rome to obtain an annulment
+
+The Counter-Reformation: the Catholic Church responded with the Council of Trent (1545–1563), reforming its practices and reaffirming its doctrines. The Jesuit order (Society of Jesus) was founded to combat Protestantism through education and missions.
+
+Religious wars (e.g., Thirty Years' War, 1618–1648) scarred Europe. The Peace of Westphalia (1648) established the modern concept of state sovereignty.
+
+
+7. AGE OF EXPLORATION AND COLONIALISM (c. 1400 – 1900)
+------------------------------
+From the 15th century, European nations — beginning with Portugal and Spain — began exploring the seas, driven by desire for trade routes to Asia, Christian missionary impulse, and the search for wealth.
+
+Key voyages:
+- Bartolomeu Dias (1488): rounded the Cape of Good Hope (southern Africa)
+- Vasco da Gama (1497–99): reached India by sea around Africa
+- Christopher Columbus (1492): financed by Spain, reached the Caribbean (the "Americas" for Europe) seeking a westward route to Asia
+- Ferdinand Magellan (1519–22): first circumnavigation of the globe
+
+The Columbian Exchange: the transfer of plants, animals, diseases, and people between the Old World (Europe/Africa/Asia) and New World (Americas) after 1492. Crops like potatoes, tomatoes, maize, and cocoa transformed European diets. But European diseases (smallpox, measles) devastated indigenous American populations, killing tens of millions.
+
+The Transatlantic Slave Trade (16th–19th centuries): European powers (Portugal, Spain, Britain, France, Netherlands) enslaved approximately 12–15 million Africans and transported them to the Americas to work on plantations. The trade destroyed African communities and created brutal plantation economies. Britain abolished the slave trade in 1807 and slavery in 1833.
+
+The British Empire became the largest in history by the 19th century, encompassing India, large parts of Africa, Australia, Canada, and much of the Caribbean. The phrase "the sun never sets on the British Empire" reflected its global reach. Imperialism brought technological and institutional change alongside exploitation, cultural destruction, and racism.
+
+
+8. THE SCIENTIFIC REVOLUTION AND THE ENLIGHTENMENT (c. 1543 – 1800)
+------------------------------
+The Scientific Revolution (16th–17th centuries): a transformation in how Europeans understood the natural world, emphasising observation and experiment over ancient authority.
+
+Key figures:
+- Copernicus (1543): heliocentric model of the solar system
+- Galileo Galilei: confirmed heliocentrism with telescope; trials by the Inquisition
+- Johannes Kepler: laws of planetary motion
+- Isaac Newton (1687): Principia Mathematica — laws of motion and universal gravitation; calculus; optics
+- William Harvey: circulation of blood
+- Francis Bacon: scientific method (induction)
+
+The Enlightenment (18th century): a philosophical movement emphasising reason, individual rights, progress, and skepticism of traditional authority. Key thinkers (philosophes):
+- John Locke: natural rights (life, liberty, property); government by consent → influenced American and French Revolutions
+- Voltaire: religious tolerance, freedom of speech
+- Jean-Jacques Rousseau: social contract; popular sovereignty
+- Montesquieu: separation of powers (influenced the US Constitution)
+- Adam Smith: free-market economics (The Wealth of Nations, 1776)
+
+
+9. THE AGE OF REVOLUTIONS (1776 – 1848)
+------------------------------
+The American Revolution (1775–1783): the thirteen British colonies in North America declared independence (1776), influenced by Enlightenment ideals. The Declaration of Independence (drafted by Thomas Jefferson) proclaimed that "all men are created equal" with rights to life, liberty, and the pursuit of happiness. After victory in the Revolutionary War (with French support), the United States became the first modern democratic republic. The Constitution (1787) created a federal system with separation of powers.
+
+The French Revolution (1789–1799):
+France in 1789 faced financial crisis, social inequality, and famine. The Third Estate (commoners) broke away to form the National Assembly. Key events:
+- Storming of the Bastille (14 July 1789) — symbol of royal tyranny
+- Declaration of the Rights of Man (1789) — liberty, equality, popular sovereignty
+- The Reign of Terror (1793–94) under Robespierre — tens of thousands executed by guillotine
+- Napoleon Bonaparte seized power in 1799
+
+Napoleon Bonaparte (1799–1815): rose from general to emperor of France. Conquered much of Europe, spreading Enlightenment legal codes (Napoleonic Code), abolishing feudalism, promoting meritocracy. Defeated at Waterloo (1815). The Congress of Vienna (1815) tried to restore the old order.
+
+The revolutions of 1848 swept Europe as liberal and nationalist movements erupted in France, Germany, Italy, Hungary, and elsewhere. Most were crushed, but they accelerated the decline of old dynastic systems.
+
+
+10. THE INDUSTRIAL REVOLUTION (c. 1760 – 1850)
+------------------------------
+Beginning in Britain and spreading globally, the Industrial Revolution transformed economies from agricultural to industrial. Driven by:
+- New machinery: spinning jenny, water frame, steam engine (James Watt, 1769)
+- New energy sources: coal (used to power steam engines)
+- New materials: iron and steel production
+- New factories: concentration of workers in urban mills and factories
+- Railways: the first public steam railway opened in England in 1825; transformed transport and trade
+
+Social effects:
+- Mass urbanisation: millions moved from rural areas to cities (Manchester, Birmingham, Leeds)
+- Rise of industrial working class (proletariat): long hours, dangerous conditions, child labour
+- Growth of the middle class (bourgeoisie): factory owners, merchants, professionals
+- New social problems: overcrowding, pollution, disease in industrial cities
+
+Responses to industrialisation:
+- Trade unions formed to protect workers' rights
+- Reform movements pushed for better conditions (Factory Acts, abolition of child labour)
+- Karl Marx and Friedrich Engels published The Communist Manifesto (1848), arguing capitalism exploited workers and predicting revolution
+
+The Industrial Revolution spread to Belgium, France, Germany, the USA, and Japan during the 19th century.
+
+
+11. THE WORLD WARS (1914 – 1945)
+------------------------------
+World War I (1914–1918):
+Caused by a complex web of factors: rival alliances (Triple Alliance vs. Triple Entente), militarism, imperial rivalry, nationalism (especially in the Balkans), and the assassination of Archduke Franz Ferdinand (heir to the Austro-Hungarian throne) in Sarajevo in June 1914.
+
+The war became a gruelling stalemate on the Western Front, characterised by trench warfare, poison gas, machine guns, and artillery. Over 17 million people died. Key events:
+- Gallipoli Campaign (1915); Battle of the Somme (1916) — over 1 million casualties
+- USA entered the war in 1917; Russian Revolution (1917) led to Russia's exit
+- Armistice on 11 November 1918
+
+The Treaty of Versailles (1919): imposed harsh terms on Germany — war guilt clause, massive reparations, loss of territory. Created resentment that contributed to WWII.
+
+The Interwar Period: the Great Depression (1929 onward) devastated economies worldwide. Unemployment and instability fuelled the rise of extremist ideologies: fascism in Italy (Mussolini) and Germany (Hitler), and militarism in Japan.
+
+World War II (1939–1945):
+Hitler's Nazi Germany invaded Poland on 1 September 1939; Britain and France declared war. The war's key phases:
+- Blitzkrieg and fall of France (1940); Battle of Britain (1940)
+- Operation Barbarossa (1941): Germany invaded the Soviet Union — turning point of the war
+- USA joined after Japan's attack on Pearl Harbor (December 1941)
+- Holocaust: systematic genocide of 6 million Jews and millions of others (Roma, disabled people, political prisoners) in Nazi concentration camps — one of history's greatest crimes against humanity
+- D-Day invasion of Normandy (June 1944); liberation of Western Europe
+- Atomic bombs dropped on Hiroshima and Nagasaki (August 1945) → Japan surrendered; war ended
+
+Consequences: ~70–85 million deaths (military and civilian). The United Nations established in 1945. Nuremberg Trials established international war crimes law. Beginning of the Cold War.
+
+
+12. THE COLD WAR (1947 – 1991)
+------------------------------
+After WWII, the world divided into two ideological blocs: the capitalist West led by the USA, and the communist East led by the Soviet Union (USSR). This competition — the Cold War — never became direct warfare between the superpowers (each feared nuclear annihilation) but shaped global politics for over 40 years.
+
+Key events:
+- Marshall Plan (1948): US aid to rebuild Western Europe; containment of communism
+- Berlin Blockade (1948–49); Berlin Wall erected (1961) — symbol of the Iron Curtain
+- Korean War (1950–53): US-backed South Korea vs. Soviet/Chinese-backed North Korea; ended in stalemate
+- Cuban Missile Crisis (1962): Soviet nuclear missiles discovered in Cuba; 13 days of US-Soviet standoff — closest the world came to nuclear war
+- Vietnam War (1955–75): US failed to prevent communist victory in Vietnam
+- Space Race: Sputnik (1957), first human in space Yuri Gagarin (1961), Apollo 11 Moon landing (1969)
+- Arms race: massive stockpiles of nuclear weapons; doctrine of Mutually Assured Destruction (MAD)
+- Fall of the Berlin Wall (1989) and dissolution of the Soviet Union (1991) ended the Cold War
+
+The Cold War deeply influenced decolonisation, with the US and USSR competing for influence in newly independent nations across Asia, Africa, and Latin America.
+
+
+13. DECOLONISATION AND THE 20TH-CENTURY WORLD
+------------------------------
+After WWII, European empires rapidly collapsed. Asian and African nationalist movements, weakened European powers, and international pressure drove decolonisation:
+- India and Pakistan gained independence from Britain in 1947 (accompanied by violent partition)
+- Independence movements swept Sub-Saharan Africa in the 1950s–60s ("Year of Africa" — 1960, when 17 countries gained independence)
+- The United Nations championed self-determination
+
+Key figures in independence movements: Mahatma Gandhi (India — non-violent resistance), Jawaharlal Nehru, Kwame Nkrumah (Ghana), Jomo Kenyatta (Kenya), Ho Chi Minh (Vietnam), Nelson Mandela (South Africa).
+
+Nelson Mandela and apartheid: South Africa's apartheid system (1948–1994) was a policy of strict racial segregation and white minority rule. Mandela, leader of the ANC, was imprisoned for 27 years. Released in 1990, he negotiated the peaceful transition to democracy and became South Africa's first democratically elected president in 1994.
+
+The Arab-Israeli conflict: establishment of Israel in 1948 led to immediate war with neighbouring Arab states; repeated conflicts (1967 Six-Day War, 1973 Yom Kippur War) and the ongoing Palestinian question remain unresolved.
+
+
+14. THE MODERN ERA (1990 – present)
+------------------------------
+Post-Cold War: the US briefly stood as the sole superpower. Globalisation accelerated — trade, migration, culture, and information increasingly crossed borders.
+
+Key events:
+- Gulf War (1991): US-led coalition expelled Iraq from Kuwait
+- Rwandan Genocide (1994): approximately 800,000 Tutsis and moderate Hutus killed in 100 days — international failure to prevent it highlighted flaws in global governance
+- September 11, 2001: al-Qaeda terrorist attacks on the USA (nearly 3,000 killed) → launched the "War on Terror," US-led invasions of Afghanistan (2001) and Iraq (2003)
+- 2008 Global Financial Crisis: bank failures and recession triggered by subprime mortgage collapse in the USA
+- Arab Spring (2010–2012): uprisings across North Africa and the Middle East; mixed outcomes (democracy in Tunisia, civil wars in Syria and Libya)
+- Rise of China: China's economic growth transformed global power dynamics; increasing US-China geopolitical rivalry
+- COVID-19 pandemic (2020–2022): killed millions globally; reshaped economies, healthcare systems, and international relations
+- Climate change has become one of the defining challenges of the 21st century

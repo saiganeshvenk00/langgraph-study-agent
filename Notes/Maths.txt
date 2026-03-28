@@ -1,9 +1,350 @@
-Mathematics is the study of numbers, quantities, shapes, and patterns. It provides tools for logical reasoning and problem-solving and is foundational to science, engineering, finance, and technology. Mathematics is broadly divided into areas such as arithmetic, algebra, geometry, statistics, and calculus.
+MATHEMATICS - COMPREHENSIVE STUDY NOTES
+=========================================
 
-Arithmetic is the most basic branch and deals with operations on numbers: addition, subtraction, multiplication, and division. Understanding factors, multiples, fractions, decimals, and percentages builds the foundation for more advanced topics. Prime numbers are numbers greater than 1 that have no divisors other than 1 and themselves, such as 2, 3, 5, 7, and 11.
+1. INTRODUCTION TO MATHEMATICS
+------------------------------
+Mathematics is the language of science and the foundation of logical reasoning. It studies abstract structures — numbers, quantities, shapes, change, and patterns — using rigorous methods of proof and deduction. Mathematics is divided broadly into:
+- Pure Mathematics: studied for its intrinsic interest (number theory, topology, abstract algebra)
+- Applied Mathematics: used to model real-world phenomena (mechanics, statistics, financial maths)
+- Computational Mathematics: algorithms, numerical methods, and computer science
 
-Algebra introduces the use of variables and expressions to represent unknown quantities and relationships. Equations are solved by isolating the variable using inverse operations. Linear equations produce straight-line graphs, while quadratic equations involve squared terms and produce parabolas. Algebraic thinking allows problems to be generalised and solved symbolically rather than numerically.
+Key areas: Arithmetic, Algebra, Geometry, Trigonometry, Calculus, Statistics & Probability, Discrete Mathematics, and Linear Algebra.
 
-Geometry is the study of shapes, sizes, and properties of figures in space. Key concepts include points, lines, angles, triangles, circles, and polygons. The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides. Area measures the space inside a shape, while perimeter measures the boundary length.
 
-Statistics and probability deal with data and uncertainty. Mean, median, and mode are measures of central tendency. Range and standard deviation describe how spread out data is. Probability measures the likelihood of an event occurring, expressed as a value between 0 and 1. Calculus, developed by Newton and Leibniz, studies rates of change through differentiation and accumulation of quantities through integration.
+2. NUMBER SYSTEMS AND ARITHMETIC
+------------------------------
+Types of numbers:
+- Natural numbers (N): {1, 2, 3, 4, ...} — counting numbers
+- Whole numbers / Integers (Z): {..., −2, −1, 0, 1, 2, ...}
+- Rational numbers (Q): can be expressed as p/q where p, q are integers and q ≠ 0 (fractions, terminating/repeating decimals)
+- Irrational numbers: cannot be expressed as a fraction (e.g., √2, π, e)
+- Real numbers (R): all rational and irrational numbers
+- Complex numbers (C): a + bi, where i = √(−1)
+
+Number properties:
+- Commutative: a + b = b + a; a × b = b × a
+- Associative: (a + b) + c = a + (b + c)
+- Distributive: a(b + c) = ab + ac
+- Identity: a + 0 = a; a × 1 = a
+
+BODMAS/BIDMAS rule for order of operations: Brackets, Orders (powers/roots), Division, Multiplication, Addition, Subtraction.
+
+Factors, Multiples, and Primes:
+- Factors of n: integers that divide n exactly
+- Multiples of n: n, 2n, 3n, ...
+- Prime numbers: integers > 1 with exactly two factors: 1 and itself. Examples: 2, 3, 5, 7, 11, 13, 17, 19, 23...
+- Prime factorisation: every integer > 1 can be uniquely expressed as a product of primes (Fundamental Theorem of Arithmetic). E.g., 60 = 2² × 3 × 5
+- HCF (Highest Common Factor): largest factor shared by two numbers. Found using prime factorisation.
+- LCM (Lowest Common Multiple): smallest multiple shared by two numbers.
+
+Fractions, Decimals, Percentages:
+- Fraction operations: add/subtract → common denominator; multiply → numerators and denominators separately; divide → multiply by reciprocal
+- Converting: fraction → decimal (divide), decimal → percentage (× 100)
+- Percentage change = (new − old)/old × 100
+- Percentage of a quantity: (percentage/100) × quantity
+
+Powers and Roots:
+- aⁿ means a multiplied by itself n times
+- Laws of indices: aᵐ × aⁿ = aᵐ⁺ⁿ; aᵐ / aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐⁿ; a⁰ = 1; a⁻ⁿ = 1/aⁿ; a^(1/n) = ⁿ√a
+- Scientific notation: a × 10ⁿ where 1 ≤ a < 10
+
+
+3. ALGEBRA
+------------------------------
+Algebra uses symbols (variables) to generalise arithmetic and express relationships.
+
+Expanding and Factorising:
+- Expanding brackets: a(b + c) = ab + ac; (a + b)(c + d) = ac + ad + bc + bd (FOIL)
+- Difference of two squares: a² − b² = (a + b)(a − b)
+- Perfect square: (a ± b)² = a² ± 2ab + b²
+- Factorising: reverse of expanding — find common factors or use formulas
+
+Solving Linear Equations:
+- Balance method: apply the same operation to both sides to isolate the variable
+- Example: 3x + 5 = 14 → 3x = 9 → x = 3
+- With fractions: multiply through to clear denominators
+
+Solving Simultaneous Equations (two unknowns):
+- Elimination: multiply equations to match coefficients, then add/subtract
+- Substitution: express one variable in terms of the other and substitute
+- Graphical: find intersection point of two lines
+
+Solving Quadratic Equations (ax² + bx + c = 0):
+- Factorising: find two numbers that multiply to ac and add to b
+- Completing the square: rewrite as (x + p)² = q
+- Quadratic formula: x = (−b ± √(b² − 4ac)) / 2a
+- Discriminant Δ = b² − 4ac: Δ > 0 → two real roots; Δ = 0 → one repeated root; Δ < 0 → no real roots (complex roots)
+
+Inequalities:
+- Solved like equations, except multiplying/dividing by a negative number reverses the inequality sign
+- Linear inequalities can be represented on number lines
+- Quadratic inequalities require careful attention to the parabola's shape
+
+Algebraic Fractions:
+- Simplify by factorising numerator and denominator, then cancel common factors
+- Add/subtract using a common denominator
+
+
+4. FUNCTIONS AND GRAPHS
+------------------------------
+A function f maps each input x to exactly one output f(x). Written as y = f(x).
+
+Key types of functions:
+- Linear: y = mx + c. Gradient m, y-intercept c. Graph is a straight line.
+- Quadratic: y = ax² + bx + c. Graph is a parabola; opens upward if a > 0.
+- Cubic: y = ax³ + ... S-shaped curves.
+- Reciprocal: y = k/x. Hyperbola with asymptotes at x = 0 and y = 0.
+- Exponential: y = aˣ. Rapid growth or decay; passes through (0, 1).
+- Logarithmic: y = log_a(x); inverse of exponential.
+- Trigonometric: sin, cos, tan — periodic functions (see Trigonometry section).
+
+Transformations of graphs (y = f(x)):
+- y = f(x) + a: vertical translation up by a
+- y = f(x − a): horizontal translation right by a
+- y = af(x): vertical stretch by factor a
+- y = f(ax): horizontal compression by factor a (or stretch by 1/a)
+- y = −f(x): reflection in x-axis
+- y = f(−x): reflection in y-axis
+
+Domain and Range:
+- Domain: set of valid input values
+- Range: set of output values
+- Inverse function f⁻¹: swaps domain and range; found by swapping x and y and solving for y
+- Composite function fg(x) = f(g(x)): apply g first, then f
+
+Straight-line graphs:
+- Gradient = (y₂ − y₁)/(x₂ − x₁)
+- Equation of a line: y − y₁ = m(x − x₁) or y = mx + c
+- Parallel lines have equal gradients; perpendicular lines have gradients with product −1
+
+
+5. SEQUENCES AND SERIES
+------------------------------
+A sequence is an ordered list of numbers. A series is the sum of the terms.
+
+Arithmetic sequences (APs): each term differs by a constant (common difference d).
+- nth term: aₙ = a + (n − 1)d
+- Sum of n terms: Sₙ = n/2 × (2a + (n − 1)d) = n/2 × (first + last)
+
+Geometric sequences (GPs): each term is multiplied by a constant (common ratio r).
+- nth term: aₙ = arⁿ⁻¹
+- Sum of n terms: Sₙ = a(1 − rⁿ)/(1 − r) for r ≠ 1
+- Sum to infinity (|r| < 1): S∞ = a/(1 − r)
+
+The Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13, 21, ... Each term is the sum of the two before it. Appears widely in nature. Related to the golden ratio φ ≈ 1.618.
+
+
+6. TRIGONOMETRY
+------------------------------
+Trigonometry studies relationships between angles and sides in triangles.
+
+Right-angled triangles — SOH-CAH-TOA:
+- sin θ = Opposite / Hypotenuse
+- cos θ = Adjacent / Hypotenuse
+- tan θ = Opposite / Adjacent
+- Also: sin²θ + cos²θ = 1 (Pythagorean identity)
+
+Key angle values:
+- sin 0° = 0, sin 30° = ½, sin 45° = √2/2, sin 60° = √3/2, sin 90° = 1
+- cos 90° = 0, cos 60° = ½, cos 45° = √2/2, cos 30° = √3/2, cos 0° = 1
+- tan 45° = 1, tan 60° = √3, tan 30° = 1/√3
+
+The Sine Rule (for any triangle): a/sin A = b/sin B = c/sin C
+The Cosine Rule: a² = b² + c² − 2bc cos A (used when two sides and included angle, or all three sides)
+Area of a triangle: ½ab sin C
+
+For non-right triangles, these rules determine unknown sides or angles.
+
+Graphs of sin, cos, tan:
+- sin and cos are periodic with period 360° (2π radians), amplitude 1
+- tan is periodic with period 180° (π radians), with vertical asymptotes
+- Radians: 360° = 2π rad; 180° = π rad; 1 rad ≈ 57.3°
+
+Trigonometric identities:
+- sin²θ + cos²θ = 1
+- tan θ = sin θ / cos θ
+- 1 + tan²θ = sec²θ
+- 1 + cot²θ = cosec²θ
+- Double angle: sin 2θ = 2 sin θ cos θ; cos 2θ = cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ
+
+
+7. GEOMETRY
+------------------------------
+Geometry is the study of shapes, sizes, and properties of figures in space.
+
+Angles:
+- Angles on a straight line sum to 180°; around a point sum to 360°
+- Vertically opposite angles are equal
+- Corresponding angles are equal (parallel lines cut by a transversal)
+- Alternate interior angles are equal; co-interior angles sum to 180°
+
+Triangles:
+- Angles sum to 180°
+- Types: equilateral (all sides/angles equal), isosceles (two sides/angles equal), scalene, right-angled
+- Exterior angle = sum of two opposite interior angles
+
+Quadrilaterals:
+- Square, rectangle, rhombus, parallelogram, trapezium, kite
+- Interior angles of a quadrilateral sum to 360°; general polygon: (n − 2) × 180°
+
+Circle theorems:
+- Angle at centre = twice angle at circumference from the same arc
+- Angles in the same segment are equal
+- Opposite angles in a cyclic quadrilateral sum to 180°
+- Angle in a semicircle = 90° (Thales' theorem)
+- Tangent to a circle is perpendicular to the radius at the point of tangency
+- Two tangents from an external point are equal in length
+
+Congruence (same shape and size): SSS, SAS, ASA, RHS conditions
+Similarity (same shape, different size): corresponding angles equal, sides in proportion
+
+Area and Perimeter:
+- Rectangle: A = lw, P = 2(l + w)
+- Triangle: A = ½bh
+- Circle: A = πr², Circumference = 2πr
+- Sector: arc length = rθ; area = ½r²θ (θ in radians)
+- Trapezium: A = ½(a + b)h
+
+Volume and Surface Area:
+- Cuboid: V = lwh, SA = 2(lw + lh + wh)
+- Cylinder: V = πr²h, SA = 2πr² + 2πrh
+- Sphere: V = (4/3)πr³, SA = 4πr²
+- Cone: V = (1/3)πr²h, SA = πr² + πrl (l = slant height)
+- Prism: V = cross-sectional area × length
+
+Vectors:
+- Represented as column vectors or as bold/underlined letters
+- Vector addition: (a, b) + (c, d) = (a+c, b+d)
+- Scalar multiplication: k(a, b) = (ka, kb)
+- Magnitude: |AB| = √(a² + b²) in 2D
+- Position vectors: from the origin to a point
+- Midpoint: M = ½(OA + OB)
+
+
+8. CALCULUS
+------------------------------
+Calculus has two main branches: differentiation (rates of change) and integration (accumulation of quantities). Developed independently by Newton and Leibniz in the 17th century.
+
+Differentiation:
+- The derivative f'(x) = dy/dx represents the instantaneous rate of change of y with respect to x — the gradient of the tangent at a point
+- Basic rule: d/dx (xⁿ) = nxⁿ⁻¹
+- Rules: 
+  - Chain rule: d/dx [f(g(x))] = f'(g(x)) × g'(x)
+  - Product rule: d/dx [uv] = u'v + uv'
+  - Quotient rule: d/dx [u/v] = (u'v − uv') / v²
+- Standard derivatives: d/dx (sin x) = cos x; d/dx (cos x) = −sin x; d/dx (eˣ) = eˣ; d/dx (ln x) = 1/x
+
+Applications of differentiation:
+- Finding stationary points (where dy/dx = 0): maxima, minima, points of inflection
+- Second derivative d²y/dx² tells us the nature of stationary points: positive → minimum, negative → maximum
+- Optimisation problems: maximise/minimise area, volume, profit, etc.
+- Velocity = ds/dt; Acceleration = dv/dt = d²s/dt²
+
+Integration:
+- The integral ∫f(x)dx is the reverse of differentiation (antiderivative): ∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ −1)
+- Definite integral: ∫[a to b] f(x) dx gives the area under the curve between x = a and x = b
+- Standard integrals: ∫sin x dx = −cos x + C; ∫cos x dx = sin x + C; ∫eˣ dx = eˣ + C; ∫(1/x) dx = ln|x| + C
+- Techniques: substitution, integration by parts (∫u dv = uv − ∫v du), partial fractions
+
+Area between curves: ∫[a to b] [f(x) − g(x)] dx (upper curve minus lower curve)
+
+
+9. LOGARITHMS AND EXPONENTIALS
+------------------------------
+Logarithms are the inverse of exponentials: if aˣ = y, then log_a(y) = x.
+
+Laws of logarithms:
+- log(ab) = log a + log b
+- log(a/b) = log a − log b
+- log(aⁿ) = n log a
+- log_a(a) = 1; log_a(1) = 0; log_a(aˣ) = x
+
+Natural logarithm: ln x = log_e x, where e ≈ 2.718 (Euler's number)
+- e is defined as the base for which the exponential function eˣ is its own derivative
+- Used in continuous growth/decay: N = N₀eᵏᵗ
+
+Exponential growth and decay applications:
+- Population growth, compound interest, radioactive decay, cooling
+- Compound interest: A = P(1 + r/n)ⁿᵗ → continuous compounding: A = Peʳᵗ
+- Half-life: T½ = ln(2)/k where k is the decay constant
+
+Solving exponential equations: take logarithms of both sides.
+
+
+10. STATISTICS AND DATA
+------------------------------
+Statistics is the science of collecting, analysing, interpreting, and presenting data.
+
+Types of data:
+- Qualitative (categorical): non-numerical (e.g., colours, names)
+- Quantitative (numerical): discrete (countable, e.g., number of students) or continuous (measurable, e.g., height, temperature)
+
+Measures of central tendency:
+- Mean: sum of values / number of values. Sensitive to outliers.
+- Median: middle value when data is ordered. Robust to outliers.
+- Mode: most frequently occurring value.
+
+Measures of spread / dispersion:
+- Range: max − min
+- Interquartile range (IQR): Q3 − Q1. The middle 50% of data.
+- Variance: average of squared deviations from the mean: σ² = Σ(xᵢ − x̄)² / n
+- Standard deviation σ: square root of variance. Measures typical distance from the mean.
+
+Frequency tables and grouped data: use midpoints for estimates. Cumulative frequency curves (ogives) allow estimation of median, quartiles.
+
+Diagrams: histograms (area = frequency), frequency polygons, box plots (showing median, quartiles, extremes), pie charts, scatter diagrams, stem-and-leaf plots.
+
+Correlation and regression:
+- Scatter diagrams show relationship between two variables
+- Positive/negative/no correlation
+- Line of best fit (least squares regression line): ŷ = a + bx minimises the sum of squared residuals
+- Pearson's correlation coefficient r (−1 ≤ r ≤ 1): measures linear correlation strength
+
+
+11. PROBABILITY
+------------------------------
+Probability measures the likelihood of an event occurring: P(E) = number of favourable outcomes / total number of equally likely outcomes. Always 0 ≤ P(E) ≤ 1.
+
+Rules:
+- P(not A) = 1 − P(A) (complementary events)
+- P(A or B) = P(A) + P(B) − P(A and B) (addition rule)
+- For mutually exclusive events: P(A or B) = P(A) + P(B)
+- P(A and B) = P(A) × P(B|A) (multiplication rule)
+- For independent events: P(A and B) = P(A) × P(B)
+
+Conditional probability: P(A|B) = P(A and B) / P(B) — probability of A given that B has occurred.
+
+Tree diagrams: multiply along branches (AND), add across branches (OR). Useful for two-stage experiments.
+
+Venn diagrams: visually represent sets and their intersections. Useful for two/three-event problems.
+
+Distributions:
+- Binomial distribution: fixed number of independent trials, each with the same probability of success; P(X = r) = C(n,r) pʳ (1−p)ⁿ⁻ʳ; mean = np, variance = np(1−p)
+- Normal distribution: symmetric bell-shaped curve. Defined by mean μ and standard deviation σ. ~68% of data within 1σ, ~95% within 2σ, ~99.7% within 3σ. Standard normal distribution: Z = (X − μ)/σ
+
+
+12. DISCRETE MATHEMATICS
+------------------------------
+Discrete mathematics deals with countable, distinct structures rather than continuous quantities.
+
+Set theory:
+- A set is an unordered collection of distinct elements
+- Operations: union (A ∪ B), intersection (A ∩ B), difference (A \ B), complement (A')
+- Subsets: A ⊆ B means every element of A is in B
+- De Morgan's laws: (A ∪ B)' = A' ∩ B'; (A ∩ B)' = A' ∪ B'
+
+Combinatorics:
+- Permutations (order matters): nPr = n! / (n − r)!
+- Combinations (order doesn't matter): nCr = n! / (r!(n − r)!) = C(n, r) = "n choose r"
+- n! = n × (n−1) × ... × 2 × 1; 0! = 1
+- Binomial theorem: (a + b)ⁿ = Σ C(n,r) aⁿ⁻ʳ bʳ
+
+Logic:
+- Propositions: statements that are true or false
+- Logical connectives: AND (∧), OR (∨), NOT (¬), IMPLIES (→), IFF (↔)
+- Truth tables encode all combinations
+- Proof techniques: direct proof, proof by contradiction, proof by induction
+
+Mathematical induction: prove a base case (n = 1), assume true for n = k (inductive hypothesis), prove true for n = k + 1. Proves statements for all natural numbers.
+
+Graph theory: graphs consist of vertices (nodes) connected by edges. Used in computer science, networking, and logistics. Euler's formula for planar graphs: V − E + F = 2 (vertices, edges, faces).

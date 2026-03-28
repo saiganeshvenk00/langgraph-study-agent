@@ -16,7 +16,6 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from tools import list_note_files, read_note_file, save_output
 
 from pydantic import BaseModel, Field
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 
 load_dotenv()
@@ -46,7 +45,7 @@ SUBJECT_FILE_MAP = {
 #Step1: Define the state of the graph
 
 class State(TypedDict):
-    messages: Annotated[list[Any], add_messages]
+    messages: Annotated[List[Any], add_messages]
     subject: Annotated[str, "The subject of the study"]
     task: Annotated[str, "The task to be performed"]
     filename: Annotated[str, "The filename of the note"]
@@ -57,7 +56,8 @@ class State(TypedDict):
 #Step2: Define the graph
 graph_builder= StateGraph[State, None, State, State](State)
 
-#Step3: Define the node------------------------------------------------------
+#Step3: Define the nodes------------------------------------------------------
+
 #Router Node
 def router_node(state: State):
     latest_message = state["messages"][-1]
@@ -90,7 +90,8 @@ Rules:
 - If the user asks for flashcards, Q/A, or quiz cards, use flashcards.
 - If the user asks to rewrite, simplify, or explain in easier words, use rewrite.
 - Return only allowed values.
-- If the subject is unclear, choose the closest valid subject only if it is obvious.
+- If the subject is unclear, choose the closest valid subject only if it is obvious, or ask the user to clarify.
+- If the task is unclear, choose the closest valid task only if it is obvious, or ask the user to clarify.
 """
 
     result = router_llm.invoke(
@@ -104,3 +105,43 @@ Rules:
         "subject": result.subject.lower(),
         "task": result.task.lower(),
     }
+
+#Summary Node
+def summary_agent(state: State):
+    subject = state["subject"].lower()
+    task = state["task"].lower()
+
+    filename = SUBJECT_FILE_MAP.get(subject)
+
+    if not filename:
+        return {
+            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+        }
+
+    note_content = read_note_file(filename)
+
+    if task == "fetch_notes":
+        return {
+            "filename": filename,
+            "note_content": note_content,
+            "output": note_content
+        }
+
+    prompt = f"""
+You are a helpful study assistant.
+
+Summarize the following notes into clear, concise study points.
+Keep the summary easy to revise from.
+
+Notes:
+{note_content}
+"""
+
+    response = llm.invoke(prompt)
+
+    return {
+        "filename": filename,
+        "note_content": note_content,
+        "output": response.content
+    }
+

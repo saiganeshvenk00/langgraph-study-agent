@@ -1,9 +1,221 @@
-Chemistry is the study of matter, its properties, composition, and the changes it undergoes. Everything around us is made of matter, and chemistry explains what things are made of and how they interact. It is central to medicine, materials science, environmental science, and industry.
+CHEMISTRY - COMPREHENSIVE STUDY NOTES
+======================================
 
-All matter is made up of atoms, the smallest units of an element that retain its chemical identity. Atoms consist of a nucleus containing protons and neutrons, surrounded by electrons in energy shells. The number of protons defines the atomic number and determines which element an atom is. The periodic table organises elements by atomic number and groups them by similar chemical properties.
+1. INTRODUCTION TO CHEMISTRY
+------------------------------
+Chemistry is the branch of natural science concerned with the study of matter — its composition, structure, properties, and the changes it undergoes during chemical reactions. It is often called the "central science" because it bridges physics, biology, geology, environmental science, and materials science. Chemistry is essential to medicine (drug development, diagnostics), agriculture (fertilisers, pesticides), industry (polymers, fuels), and everyday life (cooking, cleaning, batteries).
 
-Chemical bonding occurs when atoms combine to form compounds. Ionic bonds form when electrons are transferred between atoms, creating oppositely charged ions that attract each other, as in sodium chloride. Covalent bonds form when atoms share electrons, as in water and carbon dioxide. The type of bonding determines the physical and chemical properties of a substance.
+The major branches of chemistry include:
+- Organic Chemistry: study of carbon-containing compounds
+- Inorganic Chemistry: study of non-carbon compounds and minerals
+- Physical Chemistry: study of the physical principles underlying chemical systems
+- Analytical Chemistry: techniques for identifying and quantifying substances
+- Biochemistry: chemistry of living organisms
+- Environmental Chemistry: chemical processes in natural systems
 
-Chemical reactions involve the breaking and forming of bonds. Reactants are transformed into products, and the law of conservation of mass ensures that atoms are neither created nor destroyed. Reactions can be exothermic, releasing energy as heat, or endothermic, absorbing energy. Reaction rates are affected by temperature, concentration, surface area, and the presence of catalysts.
 
-Acids and bases are key classes of compounds. Acids donate protons and have a pH below 7; bases accept protons and have a pH above 7. A pH of 7 is neutral. Neutralisation reactions between acids and bases produce a salt and water. Organic chemistry focuses on carbon-based compounds and is fundamental to understanding life, pharmaceuticals, and synthetic materials.
+2. ATOMIC STRUCTURE
+------------------------------
+All matter is composed of atoms. An atom is the smallest unit of an element that retains the chemical properties of that element. Atoms consist of three subatomic particles:
+- Protons: positively charged, located in the nucleus
+- Neutrons: no charge, located in the nucleus
+- Electrons: negatively charged, orbit the nucleus in energy shells (electron shells)
+
+The atomic number (Z) is the number of protons in an atom. It uniquely identifies an element. The mass number (A) is the total number of protons and neutrons. Isotopes are atoms of the same element with different numbers of neutrons (e.g., Carbon-12 and Carbon-14). Relative atomic mass is the weighted average of an element's isotopes.
+
+Electron Configuration:
+Electrons occupy orbitals arranged in shells. The first shell holds a maximum of 2 electrons, the second holds 8, and the third holds 18 (though it fills with 8 before the fourth shell begins in typical chemistry contexts). Valence electrons — those in the outermost shell — determine an element's chemical behaviour.
+
+The Bohr model introduced the idea of electrons in fixed energy levels. Modern quantum mechanical models describe electrons as probability clouds (orbitals: s, p, d, f), but the shell model is sufficient for most general chemistry.
+
+
+3. THE PERIODIC TABLE
+------------------------------
+The periodic table organises all known elements (currently 118) by increasing atomic number. It is arranged into:
+- Periods (horizontal rows): elements in the same period have the same number of electron shells
+- Groups (vertical columns): elements in the same group have the same number of valence electrons and similar chemical properties
+
+Key groups include:
+- Group 1 (Alkali Metals): highly reactive metals, react vigorously with water (Li, Na, K, Rb, Cs, Fr)
+- Group 2 (Alkaline Earth Metals): reactive metals, less so than Group 1 (Be, Mg, Ca, Sr, Ba, Ra)
+- Group 17 (Halogens): highly reactive non-metals that form salts (F, Cl, Br, I, At)
+- Group 18 (Noble Gases): inert gases with full valence shells (He, Ne, Ar, Kr, Xe, Rn)
+- Transition Metals: d-block elements with variable oxidation states, often coloured compounds (Fe, Cu, Zn, Mn, etc.)
+
+Periodic trends:
+- Atomic radius: increases down a group (more shells), decreases across a period (increasing nuclear charge pulls electrons in)
+- Electronegativity: increases across a period and up a group (fluorine is the most electronegative element)
+- Ionisation energy: energy required to remove an electron; increases across a period, decreases down a group
+- Metallic character: increases down a group and decreases left to right across a period
+
+
+4. CHEMICAL BONDING
+------------------------------
+Atoms bond together to achieve more stable, lower-energy configurations, usually by completing their valence shell (octet rule — 8 electrons).
+
+Ionic Bonding:
+Occurs between metals and non-metals. The metal loses one or more electrons to become a positively charged cation; the non-metal gains electrons to become a negatively charged anion. The electrostatic attraction between oppositely charged ions forms the ionic bond. Example: sodium (Na) loses one electron to chlorine (Cl), forming Na+ and Cl-, which combine into NaCl (table salt). Ionic compounds form crystalline lattices, have high melting points, and conduct electricity when dissolved in water or melted.
+
+Covalent Bonding:
+Occurs between two non-metals. Atoms share pairs of electrons. A single bond involves one shared pair; a double bond involves two; a triple bond involves three. Examples: H2O (water), CO2 (carbon dioxide), N2 (nitrogen gas). Covalent compounds can be simple molecular (low melting points) or giant covalent structures (e.g., diamond, silica — very high melting points).
+
+Metallic Bonding:
+In metals, valence electrons are delocalised — they move freely through a lattice of positive metal ions. This "sea of electrons" explains the properties of metals: electrical conductivity, thermal conductivity, malleability, and ductility.
+
+Polar Bonds and Electronegativity:
+When two atoms with different electronegativities share electrons, the bond is polar — the more electronegative atom attracts the electron pair more strongly, acquiring a partial negative charge (δ-) while the other has a partial positive charge (δ+). Water is a polar molecule due to the electronegativity of oxygen.
+
+Intermolecular Forces:
+These are weaker forces between molecules (not within them):
+- Van der Waals / London dispersion forces: present in all molecules; caused by temporary dipoles
+- Dipole-dipole interactions: between polar molecules
+- Hydrogen bonding: a particularly strong dipole-dipole interaction occurring when hydrogen is bonded to N, O, or F. Explains water's high boiling point and surface tension.
+
+
+5. CHEMICAL REACTIONS AND EQUATIONS
+------------------------------
+A chemical reaction transforms reactants into products by breaking and forming chemical bonds. Reactions are represented by balanced equations where the number of each type of atom is the same on both sides (law of conservation of mass).
+
+Example: 2H2 + O2 → 2H2O
+
+Types of reactions:
+- Synthesis (combination): A + B → AB
+- Decomposition: AB → A + B
+- Displacement (single): A + BC → AC + B
+- Double displacement: AB + CD → AD + CB
+- Combustion: fuel + oxygen → CO2 + H2O (+ energy)
+- Redox: involves transfer of electrons (oxidation = loss, reduction = gain — remember OIL RIG)
+
+Exothermic reactions release heat energy to the surroundings (e.g., combustion, neutralisation). Endothermic reactions absorb heat from the surroundings (e.g., thermal decomposition, photosynthesis).
+
+Activation energy is the minimum energy required to start a reaction. A catalyst lowers the activation energy without being consumed, increasing the reaction rate.
+
+Factors affecting reaction rate:
+- Temperature: higher temperature increases kinetic energy → more frequent and energetic collisions
+- Concentration: more particles per unit volume → more collisions
+- Surface area: more exposed surface → more collisions
+- Catalysts: provide an alternative reaction pathway with lower activation energy
+- Pressure (for gases): increases concentration of gas particles
+
+
+6. STOICHIOMETRY AND THE MOLE
+------------------------------
+The mole is the SI unit for amount of substance. 1 mole = 6.022 × 10²³ particles (Avogadro's number). This number allows chemists to work with macroscopic quantities that correspond to atomic-scale amounts.
+
+Molar mass is the mass of one mole of a substance, measured in g/mol. It equals the relative atomic mass (or relative molecular mass) in grams.
+
+Example: Molar mass of water (H2O) = 2(1) + 16 = 18 g/mol
+
+Mole calculations:
+- Moles = Mass / Molar mass
+- Moles = Volume (in dm³) × Concentration (in mol/dm³)
+- Moles of gas at STP: 1 mole occupies 22.4 L at standard temperature and pressure
+
+Stoichiometry uses mole ratios from balanced equations to calculate masses, volumes, or concentrations of reactants and products.
+
+Percentage yield = (actual yield / theoretical yield) × 100
+Atom economy = (molar mass of desired product / total molar mass of all products) × 100
+
+
+7. STATES OF MATTER
+------------------------------
+Matter exists in four main states: solid, liquid, gas, and plasma (in stars).
+
+Solids: particles are closely packed in fixed positions; they vibrate but do not move freely. Solids have definite shape and volume.
+
+Liquids: particles are close together but can move past each other. Liquids have definite volume but take the shape of their container.
+
+Gases: particles are far apart and move freely and rapidly in all directions. Gases have no fixed shape or volume and can be compressed.
+
+Changes of state:
+- Melting (solid → liquid), Boiling/Evaporation (liquid → gas), Sublimation (solid → gas)
+- Condensation (gas → liquid), Freezing (liquid → solid), Deposition (gas → solid)
+
+During a change of state, temperature remains constant as energy is used to break (or form) intermolecular bonds. This energy is called latent heat.
+
+The kinetic theory of gases states that gas particles are in constant random motion, collide elastically, and exert pressure through collisions with container walls.
+
+Gas Laws:
+- Boyle's Law: P ∝ 1/V (at constant temperature)
+- Charles's Law: V ∝ T (at constant pressure)
+- Ideal Gas Law: PV = nRT, where R = 8.314 J/mol·K
+
+
+8. ACIDS, BASES, AND pH
+------------------------------
+Acids are substances that donate protons (H+ ions) in solution (Brønsted-Lowry definition). They have a pH below 7, turn litmus red, and react with metals to produce hydrogen gas and with carbonates to produce CO2.
+
+Bases accept protons. Alkalis are soluble bases that produce hydroxide ions (OH-) in water. They have a pH above 7 and turn litmus blue. Strong bases include NaOH (sodium hydroxide) and KOH (potassium hydroxide).
+
+The pH scale runs from 0 (most acidic) to 14 (most alkaline), with 7 being neutral. pH = -log[H+].
+
+Strong acids fully dissociate in water (e.g., HCl, H2SO4, HNO3). Weak acids only partially dissociate (e.g., ethanoic acid, citric acid).
+
+Neutralisation: acid + base → salt + water
+Example: HCl + NaOH → NaCl + H2O
+
+Titration is a technique used to determine the concentration of an acid or base by neutralising it with a known concentration of the other. An indicator (e.g., phenolphthalein, methyl orange) shows the endpoint.
+
+Buffers are solutions that resist changes in pH. They typically consist of a weak acid and its conjugate base, or a weak base and its conjugate acid.
+
+
+9. ORGANIC CHEMISTRY
+------------------------------
+Organic chemistry is the study of carbon-containing compounds. Carbon is uniquely suited to form the basis of complex molecules because it has four valence electrons and can form four covalent bonds, creating chains, rings, and branching structures.
+
+Hydrocarbons contain only hydrogen and carbon:
+- Alkanes (CnH2n+2): saturated, single C-C bonds; e.g., methane (CH4), ethane (C2H6), propane (C3H8)
+- Alkenes (CnH2n): contain a C=C double bond; e.g., ethene (C2H4)
+- Alkynes: contain a C≡C triple bond; e.g., ethyne (C2H2)
+- Aromatic compounds: contain a benzene ring (C6H6)
+
+Functional groups determine the chemical behaviour of organic molecules:
+- Hydroxyl (−OH): alcohols (e.g., ethanol)
+- Carboxyl (−COOH): carboxylic acids (e.g., ethanoic acid/acetic acid)
+- Amine (−NH2): amines and amino acids
+- Ester (−COO−): esters, formed from acids + alcohols; used in perfumes and flavourings
+- Aldehyde (−CHO) and Ketone (C=O): carbonyl compounds
+
+Polymers are large molecules made from repeating monomer units:
+- Addition polymers: formed by joining alkene monomers (e.g., poly(ethene), PVC)
+- Condensation polymers: formed with elimination of small molecules like water (e.g., nylon, polyester, proteins, DNA)
+
+Isomers are compounds with the same molecular formula but different structural arrangements, leading to different properties.
+
+
+10. ELECTROCHEMISTRY
+------------------------------
+Electrolysis is the decomposition of a compound using electrical energy. An electrolyte (a dissolved or molten ionic compound) conducts electricity. At the cathode (negative electrode), cations gain electrons (reduction). At the anode (positive electrode), anions lose electrons (oxidation).
+
+Applications: electroplating, purifying metals (e.g., copper refining), extraction of reactive metals like aluminium from bauxite.
+
+Galvanic (voltaic) cells convert chemical energy into electrical energy via spontaneous redox reactions. A simple cell consists of two different metals (electrodes) in contact with an electrolyte. The more reactive metal acts as the anode and is oxidised; the less reactive acts as the cathode and is reduced.
+
+Standard electrode potential measures the tendency of a half-reaction to occur as a reduction, relative to the standard hydrogen electrode (SHE = 0.00 V).
+
+Batteries are commercial galvanic cells. Rechargeable batteries (e.g., lithium-ion) allow the electrochemical reaction to be reversed by applying an external current.
+
+
+11. THERMODYNAMICS IN CHEMISTRY
+------------------------------
+Enthalpy (H) is the heat content of a system at constant pressure. ΔH (enthalpy change) for a reaction is negative for exothermic reactions and positive for endothermic ones.
+
+Hess's Law states that the total enthalpy change of a reaction is independent of the route taken — only the initial and final states matter. This allows calculation of ΔH for reactions that cannot be measured directly using known ΔH values.
+
+Bond enthalpies: energy is required to break bonds (endothermic) and released when bonds form (exothermic). Approximate ΔH can be calculated from the difference between bonds broken and bonds formed.
+
+Entropy (S) measures the disorder or randomness of a system. Reactions tend to be favoured when they increase entropy. Gibbs free energy (ΔG = ΔH − TΔS) determines spontaneity: a reaction is spontaneous when ΔG < 0.
+
+
+12. CHEMICAL EQUILIBRIUM
+------------------------------
+Many reactions are reversible — products can react to reform reactants. At equilibrium, the forward and reverse reaction rates are equal, and concentrations remain constant (though not necessarily equal).
+
+Le Chatelier's Principle states that if a system at equilibrium is disturbed, it will shift to counteract the disturbance and reach a new equilibrium:
+- Increase in concentration of reactant → equilibrium shifts right (towards products)
+- Decrease in temperature (for exothermic reaction) → shifts right
+- Increase in pressure → shifts towards fewer moles of gas
+
+The equilibrium constant (Kc) is a ratio of product concentrations to reactant concentrations at equilibrium, each raised to the power of their stoichiometric coefficients.
+
+Industrial applications: the Haber process (N2 + 3H2 ⇌ 2NH3) uses iron catalyst, 450°C, and 200 atm to produce ammonia for fertilisers. The Contact process produces sulphuric acid via SO2 oxidation.
