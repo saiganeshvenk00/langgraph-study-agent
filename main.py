@@ -145,3 +145,68 @@ Notes:
         "output": response.content
     }
 
+
+#Flashcards Node
+def flashcard_agent(state: State):
+    subject = state["subject"].lower()
+
+    filename = SUBJECT_FILE_MAP.get(subject)
+
+    if not filename:
+        return {
+            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+        }
+
+    note_content = read_note_file(filename)
+
+    prompt = f"""
+You are a helpful study assistant.
+
+Convert the following notes into clear flashcards in Q/A format.
+Keep them concise and useful for revision.
+Generate 8 to 10 flashcards.
+
+Notes:
+{note_content}
+"""
+
+    response = llm.invoke(prompt)
+
+    return {
+        "filename": filename,
+        "note_content": note_content,
+        "output": response.content
+    }
+
+#Rewrite Node
+def flashcard_agent(state: State):
+    subject = state["subject"].lower()
+
+    filename = SUBJECT_FILE_MAP.get(subject)
+
+    if not filename:
+        return {
+            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+        }
+
+    note_content = read_note_file(filename)
+
+    prompt = f"""
+You are a helpful study assistant.
+
+Convert the following notes into clear flashcards in Q/A format.
+Keep them concise and useful for revision.
+Generate 8 to 10 flashcards.
+
+Notes:
+{note_content}
+"""
+
+    response = llm.invoke(prompt)
+
+    return {
+        "filename": filename,
+        "note_content": note_content,
+        "output": response.content
+    }
+
