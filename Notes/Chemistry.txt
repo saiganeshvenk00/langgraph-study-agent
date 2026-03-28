@@ -1,0 +1,9 @@
+Chemistry is the study of matter, its properties, composition, and the changes it undergoes. Everything around us is made of matter, and chemistry explains what things are made of and how they interact. It is central to medicine, materials science, environmental science, and industry.
+
+All matter is made up of atoms, the smallest units of an element that retain its chemical identity. Atoms consist of a nucleus containing protons and neutrons, surrounded by electrons in energy shells. The number of protons defines the atomic number and determines which element an atom is. The periodic table organises elements by atomic number and groups them by similar chemical properties.
+
+Chemical bonding occurs when atoms combine to form compounds. Ionic bonds form when electrons are transferred between atoms, creating oppositely charged ions that attract each other, as in sodium chloride. Covalent bonds form when atoms share electrons, as in water and carbon dioxide. The type of bonding determines the physical and chemical properties of a substance.
+
+Chemical reactions involve the breaking and forming of bonds. Reactants are transformed into products, and the law of conservation of mass ensures that atoms are neither created nor destroyed. Reactions can be exothermic, releasing energy as heat, or endothermic, absorbing energy. Reaction rates are affected by temperature, concentration, surface area, and the presence of catalysts.
+
+Acids and bases are key classes of compounds. Acids donate protons and have a pH below 7; bases accept protons and have a pH above 7. A pH of 7 is neutral. Neutralisation reactions between acids and bases produce a salt and water. Organic chemistry focuses on carbon-based compounds and is fundamental to understanding life, pharmaceuticals, and synthetic materials.

@@ -1,0 +1,9 @@
+Mathematics is the study of numbers, quantities, shapes, and patterns. It provides tools for logical reasoning and problem-solving and is foundational to science, engineering, finance, and technology. Mathematics is broadly divided into areas such as arithmetic, algebra, geometry, statistics, and calculus.
+
+Arithmetic is the most basic branch and deals with operations on numbers: addition, subtraction, multiplication, and division. Understanding factors, multiples, fractions, decimals, and percentages builds the foundation for more advanced topics. Prime numbers are numbers greater than 1 that have no divisors other than 1 and themselves, such as 2, 3, 5, 7, and 11.
+
+Algebra introduces the use of variables and expressions to represent unknown quantities and relationships. Equations are solved by isolating the variable using inverse operations. Linear equations produce straight-line graphs, while quadratic equations involve squared terms and produce parabolas. Algebraic thinking allows problems to be generalised and solved symbolically rather than numerically.
+
+Geometry is the study of shapes, sizes, and properties of figures in space. Key concepts include points, lines, angles, triangles, circles, and polygons. The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides. Area measures the space inside a shape, while perimeter measures the boundary length.
+
+Statistics and probability deal with data and uncertainty. Mean, median, and mode are measures of central tendency. Range and standard deviation describe how spread out data is. Probability measures the likelihood of an event occurring, expressed as a value between 0 and 1. Calculus, developed by Newton and Leibniz, studies rates of change through differentiation and accumulation of quantities through integration.
