@@ -179,7 +179,7 @@ Notes:
     }
 
 #Rewrite Node
-def flashcard_agent(state: State):
+def rewrite_agent(state: State):
     subject = state["subject"].lower()
 
     filename = SUBJECT_FILE_MAP.get(subject)
@@ -194,9 +194,8 @@ def flashcard_agent(state: State):
     prompt = f"""
 You are a helpful study assistant.
 
-Convert the following notes into clear flashcards in Q/A format.
-Keep them concise and useful for revision.
-Generate 8 to 10 flashcards.
+Rewrite the following notes in simpler language for a beginner.
+Make them easier to understand without losing the meaning.
 
 Notes:
 {note_content}
@@ -210,3 +209,47 @@ Notes:
         "output": response.content
     }
 
+
+
+
+
+#Step4: Add the nodes and edges to the graph------------------------------------------------------
+##Add the nodes to the graph
+
+graph_builder.add_node("router", router_node)
+graph_builder.add_node("summary", summary_agent)
+graph_builder.add_node("flashcards", flashcard_agent)
+graph_builder.add_node("rewrite", rewrite_agent)
+
+
+###Routing logic for conditional edges
+def route_task(state: State):
+    task = state["task"]
+
+    if task in ["fetch_notes", "summary"]:
+        return "summary_agent"
+    elif task == "flashcards":
+        return "flashcard_agent"
+    elif task == "rewrite":
+        return "rewrite_agent"
+
+    return "summary_agent"
+
+
+##Add the edges to the graph
+
+graph_builder.add_edge(START, "router")
+
+graph_builder.add_conditional_edges(
+    "router",
+    route_task,
+    {
+        "summary_agent": "summary_agent",
+        "flashcard_agent": "flashcard_agent",
+        "rewrite_agent": "rewrite_agent",
+    }
+)
+
+graph_builder.add_edge("summary_agent", END)
+graph_builder.add_edge("flashcard_agent", END)
+graph_builder.add_edge("rewrite_agent", END)
