@@ -13,7 +13,7 @@ def chat(message, history):
 
 demo = gr.ChatInterface(
     fn=chat, #other available functions are: chatbot, chatbot_stream, chatbot_stream_mode, chatbot_stream_mode_v2
-    title="Study Helper",
+    title="Study-Buddy",
    #type="messages" #other available types are: "messages", "text", "single", "file", "image", "audio", "video", "file", "image", "audio", "video"
     #"messages" is the default type
     #"text" is for single text input

@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from pydantic import BaseModel, Field
 
-from tools import read_note_file
+from tools import read_note_file, list_note_files
 
 
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
@@ -16,8 +16,8 @@ llm = ChatOpenAI(
 
 
 class RouterOutput(BaseModel):
-    subject: str = Field(description="One of: chemistry, physics, maths, history, geography")
-    task: str = Field(description="One of: fetch_notes, summary, flashcards, rewrite")
+    subject: str = Field(description="One of: chemistry, physics, maths, history, geography, unknown")
+    task: str = Field(description="One of: fetch_notes, summary, flashcards, rewrite, list_notes, unknown")
 
 
 SUBJECT_FILE_MAP = {
@@ -45,21 +45,21 @@ Allowed subjects:
 - maths
 - history
 - geography
+- unknown  (use this if the subject is not in the list above, or is unclear)
 
 Allowed tasks:
-- fetch_notes
-- summary
-- flashcards
-- rewrite
+- fetch_notes  (user asks for notes, study material, chapter, or content)
+- summary      (user asks to summarize)
+- flashcards   (user asks for flashcards, Q/A, or quiz cards)
+- rewrite      (user asks to rewrite, simplify, or explain in easier words)
+- list_notes   (user asks what subjects/notes are available, what is in the folder, or what they can study)
+- unknown      (use this if the task does not match any of the above)
 
 Rules:
-- If the user asks for notes, study material, chapter, or content directly, use fetch_notes.
-- If the user asks to summarize, use summary.
-- If the user asks for flashcards, Q/A, or quiz cards, use flashcards.
-- If the user asks to rewrite, simplify, or explain in easier words, use rewrite.
-- Return only allowed values.
-- If the subject is unclear, choose the closest valid subject only if it is obvious, or ask the user to clarify.
-- If the task is unclear, choose the closest valid task only if it is obvious, or ask the user to clarify.
+- Never guess a subject. If it is not clearly one of the allowed subjects, return "unknown".
+- Never guess a task. If it does not clearly match an allowed task, return "unknown".
+- Do not map unrecognised subjects (e.g. hindi, french, biology) to the closest subject.
+- Return only the exact allowed values listed above.
 """
 
     result = router_llm.invoke(
@@ -182,3 +182,39 @@ Notes:
         "output": response.content,
         "messages": [AIMessage(content=response.content)]
     }
+
+
+def unknown_subject_node(state):
+    available = ", ".join(SUBJECT_FILE_MAP.keys())
+    system = SystemMessage(content=f"""
+You are a helpful study assistant.
+
+The user asked about a subject that does not exist in the notes library.
+Politely let them know their subject is not available and tell them the available subjects are: {available}.
+Do not make up or suggest notes for unavailable subjects.
+""")
+    response = llm.invoke([system] + state["messages"])
+    return {
+        "output": response.content,
+        "messages": [AIMessage(content=response.content)]
+    }
+
+
+def unknown_task_node(state):
+    system = SystemMessage(content="""
+You are a strict study assistant. You MUST NOT perform any task other than:
+fetch_notes, summary, flashcards, rewrite, or list_notes.
+The user has requested something outside these tasks.
+You MUST refuse and tell them what you can help with. Do not fulfil their request under any circumstances.
+""")
+    response = llm.invoke([system] + state["messages"])
+    return {
+        "output": response.content,
+        "messages": [AIMessage(content=response.content)]
+    }
+
+def list_notes_agent(state):
+    files = list_note_files()
+    subjects = [f.rsplit(".", 1)[0] for f in files]
+    msg = f"Here are the available subjects: {', '.join(subjects)}. I can fetch notes, summarize, create flashcards, or rewrite them for any of these."
+    return {"output": msg, "messages": [AIMessage(content=msg)]}
