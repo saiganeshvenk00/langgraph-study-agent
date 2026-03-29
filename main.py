@@ -1,298 +1,36 @@
 import os
 import uuid
 import gradio as gr
-
-from typing import Annotated, List, Any, Optional, Dict
-from typing_extensions import TypedDict
 from dotenv import load_dotenv
-
-from langgraph.graph import StateGraph, START, END
-from langgraph.graph.message import add_messages
-from langgraph.checkpoint.memory import MemorySaver
-
-from langchain_openai import ChatOpenAI
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-
-from tools import list_note_files, read_note_file, save_output
-
-from pydantic import BaseModel, Field
+from graph import run_graph
 
 
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
 
-llm = ChatOpenAI(
-    model="gpt-4.1-mini",
-    temperature=0
+session_id = str(uuid.uuid4())
+
+def chat(message, history):
+    return run_graph(message, session_id)
+
+demo = gr.ChatInterface(
+    fn=chat, #other available functions are: chatbot, chatbot_stream, chatbot_stream_mode, chatbot_stream_mode_v2
+    title="Study Helper",
+   #type="messages" #other available types are: "messages", "text", "single", "file", "image", "audio", "video", "file", "image", "audio", "video"
+    #"messages" is the default type
+    #"text" is for single text input
+    #"single" is for single input
+    #"file" is for file input
+    #"image" is for image input
+    #"audio" is for audio input
+    #"video" is for video input
 )
 
-#Agent Class Definitions
-class RouterOutput(BaseModel):
-    subject: str = Field(description="One of: chemistry, physics, maths, history, geography")
-    task: str = Field(description="One of: fetch_notes, summary, flashcards, rewrite")
-
-
-
-
-#this is a map of the subject and the file name
-SUBJECT_FILE_MAP = {
-    "chemistry": "Chemistry.txt",
-    "physics": "Physics.txt",
-    "maths": "Maths.txt",
-    "history": "History.txt",
-    "geography": "Geography.txt"
-}
-
-#Step1: Define the state of the graph
-
-class State(TypedDict):
-    messages: Annotated[List[Any], add_messages]
-    subject: Annotated[str, "The subject of the study"]
-    task: Annotated[str, "The task to be performed"]
-    filename: Annotated[str, "The filename of the note"]
-    note_content: Annotated[str, "The content of the note"]
-    output: Annotated[str, "The output of the task"]
-    session_id: Annotated[str, "The session id"]
-
-#Step2: Define the graph
-graph_builder= StateGraph[State, None, State, State](State)
-
-#Step3: Define the nodes------------------------------------------------------
-
-#Router Node
-def router_node(state: State):
-    router_llm = llm.with_structured_output(RouterOutput)
-
-    system_prompt = """
-You are a strict router for a StudyHelp chatbot.
-
-Your job is to extract:
-1. subject
-2. task
-
-Allowed subjects:
-- chemistry
-- physics
-- maths
-- history
-- geography
-
-Allowed tasks:
-- fetch_notes
-- summary
-- flashcards
-- rewrite
-
-Rules:
-- If the user asks for notes, study material, chapter, or content directly, use fetch_notes.
-- If the user asks to summarize, use summary.
-- If the user asks for flashcards, Q/A, or quiz cards, use flashcards.
-- If the user asks to rewrite, simplify, or explain in easier words, use rewrite.
-- Return only allowed values.
-- If the subject is unclear, choose the closest valid subject only if it is obvious, or ask the user to clarify.
-- If the task is unclear, choose the closest valid task only if it is obvious, or ask the user to clarify.
-"""
-
-    result = router_llm.invoke(
-        [SystemMessage(content=system_prompt)] + state["messages"]
-    )
-
-    return {
-        "subject": result.subject.lower(),
-        "task": result.task.lower(),
-    }
-
-#Summary Node
-def summary_agent(state: State):
-    subject = state["subject"].lower()
-    task = state["task"].lower()
-
-    filename = SUBJECT_FILE_MAP.get(subject)
-
-    if not filename:
-        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
-        return {
-            "output": error_msg,
-            "messages": [AIMessage(content=error_msg)]
-        }
-
-    note_content = read_note_file(filename)
-
-    if task == "fetch_notes":
-        return {
-            "filename": filename,
-            "note_content": note_content,
-            "output": note_content,
-            "messages": [AIMessage(content=note_content)]
-        }
-
-    system = SystemMessage(content=f"""
-You are a helpful study assistant.
-
-Summarize the following notes into clear, concise study points.
-Keep the summary easy to revise from.
-
-Notes:
-{note_content}
-""")
-
-    response = llm.invoke([system] + state["messages"])
-
-    return {
-        "filename": filename,
-        "note_content": note_content,
-        "output": response.content,
-        "messages": [AIMessage(content=response.content)]
-    }
-
-
-#Flashcards Node
-def flashcard_agent(state: State):
-    subject = state["subject"].lower()
-
-    filename = SUBJECT_FILE_MAP.get(subject)
-
-    if not filename:
-        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
-        return {
-            "output": error_msg,
-            "messages": [AIMessage(content=error_msg)]
-        }
-
-    note_content = read_note_file(filename)
-
-    system = SystemMessage(content=f"""
-You are a helpful study assistant.
-
-Convert the following notes into clear flashcards in Q/A format.
-Keep them concise and useful for revision.
-Generate 8 to 10 flashcards.
-
-Notes:
-{note_content}
-""")
-
-    response = llm.invoke([system] + state["messages"])
-
-    return {
-        "filename": filename,
-        "note_content": note_content,
-        "output": response.content,
-        "messages": [AIMessage(content=response.content)]
-    }
-
-#Rewrite Node
-def rewrite_agent(state: State):
-    subject = state["subject"].lower()
-
-    filename = SUBJECT_FILE_MAP.get(subject)
-
-    if not filename:
-        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
-        return {
-            "output": error_msg,
-            "messages": [AIMessage(content=error_msg)]
-        }
-
-    note_content = read_note_file(filename)
-
-    system = SystemMessage(content=f"""
-You are a helpful study assistant.
-
-Rewrite the following notes in simpler language for a beginner.
-Make them easier to understand without losing the meaning.
-
-Notes:
-{note_content}
-""")
-
-    response = llm.invoke([system] + state["messages"])
-
-    return {
-        "filename": filename,
-        "note_content": note_content,
-        "output": response.content,
-        "messages": [AIMessage(content=response.content)]
-    }
-
-
-
-
-
-#Step4: Add the nodes and edges to the graph------------------------------------------------------
-##Add the nodes to the graph
-
-graph_builder.add_node("router", router_node)
-graph_builder.add_node("summary_agent", summary_agent)
-graph_builder.add_node("flashcard_agent", flashcard_agent)
-graph_builder.add_node("rewrite_agent", rewrite_agent)
-
-
-###Routing logic for conditional edges
-def route_task(state: State):
-    task = state["task"]
-
-    if task in ["fetch_notes", "summary"]:
-        return "summary_agent"
-    elif task == "flashcards":
-        return "flashcard_agent"
-    elif task == "rewrite":
-        return "rewrite_agent"
-
-    return "summary_agent"
-
-
-##Add the edges to the graph
-
-graph_builder.add_edge(START, "router")
-
-graph_builder.add_conditional_edges(
-    "router",
-    route_task,
-    {
-        "summary_agent": "summary_agent",
-        "flashcard_agent": "flashcard_agent",
-        "rewrite_agent": "rewrite_agent",
-    }
-)
-
-#syntax for conditional edges
-'''graph_builder.add_conditional_edges(
-    source,        # arg 1
-    path,          # arg 2
-    path_map,      # arg 3 (optional)
+#syntax for gradio chat interface is:
+'''gr.ChatInterface(
+    fn=chat, 
+    title="Study Helper",
+    type="messages" 
 )'''
 
-graph_builder.add_edge("summary_agent", END)
-graph_builder.add_edge("flashcard_agent", END)
-graph_builder.add_edge("rewrite_agent", END)
-
-#Step5: Compile the graph------------------------------------------------------
-memory = MemorySaver()
-graph = graph_builder.compile(checkpointer=memory)
-
-#Step6: Run the graph------------------------------------------------------
-def run_graph(user_input: str, session_id: str):
-    state = graph.invoke(
-        {
-            "messages": [HumanMessage(content=user_input)],
-            "subject": "",
-            "task": "",
-            "filename": "",
-            "note_content": "",
-            "output": "",
-            "session_id": session_id,
-        },
-        config={"configurable": {"thread_id": session_id}}
-    )
-    return state["output"]
-
-
-
 if __name__ == "__main__":
-    session_id = "test-session-1"
-    messages = [HumanMessage(content="Make flashcards for maths")]
-    
-    result = run_graph(messages, session_id)
-    print(result)
-
+    demo.launch()
 
