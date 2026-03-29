@@ -60,8 +60,6 @@ graph_builder= StateGraph[State, None, State, State](State)
 
 #Router Node
 def router_node(state: State):
-    latest_message = state["messages"][-1]
-
     router_llm = llm.with_structured_output(RouterOutput)
 
     system_prompt = """
@@ -95,10 +93,7 @@ Rules:
 """
 
     result = router_llm.invoke(
-        [
-            SystemMessage(content=system_prompt),
-            HumanMessage(content=latest_message.content),
-        ]
+        [SystemMessage(content=system_prompt)] + state["messages"]
     )
 
     return {
@@ -114,8 +109,10 @@ def summary_agent(state: State):
     filename = SUBJECT_FILE_MAP.get(subject)
 
     if not filename:
+        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
         return {
-            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+            "output": error_msg,
+            "messages": [AIMessage(content=error_msg)]
         }
 
     note_content = read_note_file(filename)
@@ -124,10 +121,11 @@ def summary_agent(state: State):
         return {
             "filename": filename,
             "note_content": note_content,
-            "output": note_content
+            "output": note_content,
+            "messages": [AIMessage(content=note_content)]
         }
 
-    prompt = f"""
+    system = SystemMessage(content=f"""
 You are a helpful study assistant.
 
 Summarize the following notes into clear, concise study points.
@@ -135,14 +133,15 @@ Keep the summary easy to revise from.
 
 Notes:
 {note_content}
-"""
+""")
 
-    response = llm.invoke(prompt)
+    response = llm.invoke([system] + state["messages"])
 
     return {
         "filename": filename,
         "note_content": note_content,
-        "output": response.content
+        "output": response.content,
+        "messages": [AIMessage(content=response.content)]
     }
 
 
@@ -153,13 +152,15 @@ def flashcard_agent(state: State):
     filename = SUBJECT_FILE_MAP.get(subject)
 
     if not filename:
+        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
         return {
-            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+            "output": error_msg,
+            "messages": [AIMessage(content=error_msg)]
         }
 
     note_content = read_note_file(filename)
 
-    prompt = f"""
+    system = SystemMessage(content=f"""
 You are a helpful study assistant.
 
 Convert the following notes into clear flashcards in Q/A format.
@@ -168,14 +169,15 @@ Generate 8 to 10 flashcards.
 
 Notes:
 {note_content}
-"""
+""")
 
-    response = llm.invoke(prompt)
+    response = llm.invoke([system] + state["messages"])
 
     return {
         "filename": filename,
         "note_content": note_content,
-        "output": response.content
+        "output": response.content,
+        "messages": [AIMessage(content=response.content)]
     }
 
 #Rewrite Node
@@ -185,13 +187,15 @@ def rewrite_agent(state: State):
     filename = SUBJECT_FILE_MAP.get(subject)
 
     if not filename:
+        error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
         return {
-            "output": f"Sorry, I couldn't find notes for the subject: {subject}"
+            "output": error_msg,
+            "messages": [AIMessage(content=error_msg)]
         }
 
     note_content = read_note_file(filename)
 
-    prompt = f"""
+    system = SystemMessage(content=f"""
 You are a helpful study assistant.
 
 Rewrite the following notes in simpler language for a beginner.
@@ -199,14 +203,15 @@ Make them easier to understand without losing the meaning.
 
 Notes:
 {note_content}
-"""
+""")
 
-    response = llm.invoke(prompt)
+    response = llm.invoke([system] + state["messages"])
 
     return {
         "filename": filename,
         "note_content": note_content,
-        "output": response.content
+        "output": response.content,
+        "messages": [AIMessage(content=response.content)]
     }
 
 
@@ -266,10 +271,10 @@ memory = MemorySaver()
 graph = graph_builder.compile(checkpointer=memory)
 
 #Step6: Run the graph------------------------------------------------------
-def run_graph(messages: List[Any], session_id: str):
+def run_graph(user_input: str, session_id: str):
     state = graph.invoke(
         {
-            "messages": messages,
+            "messages": [HumanMessage(content=user_input)],
             "subject": "",
             "task": "",
             "filename": "",
@@ -285,7 +290,7 @@ def run_graph(messages: List[Any], session_id: str):
 
 if __name__ == "__main__":
     session_id = "test-session-1"
-    messages = [HumanMessage(content="Summarize my chemistry notes")]
+    messages = [HumanMessage(content="Make flashcards for maths")]
     
     result = run_graph(messages, session_id)
     print(result)
