@@ -3,34 +3,41 @@ import uuid
 import gradio as gr
 from dotenv import load_dotenv
 from graph import run_graph
-
+import tools
 
 
 session_id = str(uuid.uuid4())
 
+
 def chat(message, history):
     return run_graph(message, session_id)
 
-demo = gr.ChatInterface(
-    fn=chat, #other available functions are: chatbot, chatbot_stream, chatbot_stream_mode, chatbot_stream_mode_v2
-    title="Study-Buddy",
-   #type="messages" #other available types are: "messages", "text", "single", "file", "image", "audio", "video", "file", "image", "audio", "video"
-    #"messages" is the default type
-    #"text" is for single text input
-    #"single" is for single input
-    #"file" is for file input
-    #"image" is for image input
-    #"audio" is for audio input
-    #"video" is for video input
-)
 
-#syntax for gradio chat interface is:
-'''gr.ChatInterface(
-    fn=chat, 
-    title="Study Helper",
-    type="messages" 
-)'''
+def set_folder(path):
+    if not path.strip():
+        return "⚠️ Please enter a valid folder path."
+    tools.set_notes_dir(path.strip())
+    return f"✅ **Loaded:** `{path.strip()}`"
+
+
+with gr.Blocks(title="Study-Buddy") as demo:
+    gr.Markdown("# Study-Buddy")
+
+    with gr.Row():
+        folder_input = gr.Textbox(
+            label="Notes Folder Path",
+            placeholder="e.g. C:/Users/you/Documents/Notes  or  Notes",
+            value="Notes",
+            scale=4
+        )
+        set_btn = gr.Button("Load Folder", scale=1)
+
+    status = gr.Markdown("")
+
+    set_btn.click(fn=set_folder, inputs=folder_input, outputs=status)
+
+    gr.ChatInterface(fn=chat)
+
 
 if __name__ == "__main__":
     demo.launch()
-

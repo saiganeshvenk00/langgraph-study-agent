@@ -8,6 +8,11 @@ NOTES_DIR = Path("Notes")
 SUPPORTED_EXTENSIONS = ["*.txt", "*.pdf", "*.docx", "*.pptx"]
 
 
+def set_notes_dir(path: str):
+    global NOTES_DIR
+    NOTES_DIR = Path(path)
+
+
 def list_note_files() -> list[str]:
     files = []
     for ext in SUPPORTED_EXTENSIONS:
