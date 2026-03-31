@@ -53,6 +53,20 @@ User Message
          END  →  returns output to user
 ```
 
+### Agents — What Each Node Does and Which Tools It Calls
+
+| Agent / Node | Handles | Tool access |
+|---|---|---|
+| `router_node` | Every incoming message | Calls `list_note_files()` (via `get_subject_file_map()`) to build the dynamic subject list before the LLM decides routing |
+| `summary_agent` | `fetch_notes` and `summary` tasks | Calls `list_note_files()` to resolve the subject → filename mapping, then `read_note_file()` to load the content. For `fetch_notes` the content is returned as-is; for `summary` it is passed to the LLM |
+| `flashcard_agent` | `flashcards` task | Same file resolution pattern: `list_note_files()` + `read_note_file()`. Content is then passed to the LLM with a flashcard-generation prompt |
+| `rewrite_agent` | `rewrite` task | Same file resolution pattern: `list_note_files()` + `read_note_file()`. Content is passed to the LLM with a simplification prompt |
+| `list_notes_agent` | `list_notes` task | Calls `list_note_files()` only — no file content is read, just the filenames. Returns the subject list directly to the user |
+| `unknown_subject_node` | Unrecognised subjects | Calls `list_note_files()` (via `get_subject_file_map()`) so it can tell the user which subjects *are* available |
+| `unknown_task_node` | Unrecognised tasks | No tool calls — the LLM refuses and lists the supported tasks from its system prompt |
+
+---
+
 ### Key Concept: State
 
 Every node in the graph reads from and writes to a shared **State** object. This is how data flows between nodes without you having to pass variables around manually:
@@ -231,6 +245,20 @@ Bot:  Q: What is a vector space?
 | `python-docx` | Read Word documents |
 | `python-pptx` | Read PowerPoint files |
 | `python-dotenv` | Load `.env` variables |
+
+---
+
+## Tools (`tools.py`)
+
+The agents never interact with the file system directly — they call these three tool functions defined in `tools.py`:
+
+| Function | What it does |
+|---|---|
+| `list_note_files()` | Scans the Notes folder and returns a list of every supported file (`*.txt`, `*.pdf`, `*.docx`, `*.pptx`) |
+| `read_note_file(file_name)` | Reads a single note file and returns its text content. Dispatches to the right parser based on file extension (`pypdf` for PDFs, `python-docx` for Word docs, `python-pptx` for PowerPoints, plain `open()` for text files) |
+| `save_output(content, filename)` | Writes a string to a file on disk and returns the path. Used to persist generated output (summaries, flashcards, etc.) |
+
+`set_notes_dir(path)` is also exposed so the Gradio UI can point the agent at a different folder at runtime without restarting.
 
 ---
 
