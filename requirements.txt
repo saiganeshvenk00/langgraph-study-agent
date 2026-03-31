@@ -4,3 +4,6 @@ langgraph
 langchain
 langchain-openai
 openai
+pypdf
+python-docx
+python-pptx

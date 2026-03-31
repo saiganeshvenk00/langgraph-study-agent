@@ -20,31 +20,26 @@ class RouterOutput(BaseModel):
     task: str = Field(description="One of: fetch_notes, summary, flashcards, rewrite, list_notes, unknown")
 
 
-SUBJECT_FILE_MAP = {
-    "chemistry": "Chemistry.txt",
-    "physics": "Physics.txt",
-    "maths": "Maths.txt",
-    "history": "History.txt",
-    "geography": "Geography.txt"
-}
+def get_subject_file_map() -> dict:
+    """Dynamically build subject->filename map from whatever files exist in Notes/."""
+    files = list_note_files()
+    return {f.rsplit(".", 1)[0].lower(): f for f in files}
 
 
 def router_node(state):
     router_llm = llm.with_structured_output(RouterOutput)
 
-    system_prompt = """
+    available_subjects = ", ".join(get_subject_file_map().keys())
+
+    system_prompt = f"""
 You are a strict router for a StudyHelp chatbot.
 
 Your job is to extract:
 1. subject
 2. task
 
-Allowed subjects:
-- chemistry
-- physics
-- maths
-- history
-- geography
+Allowed subjects (determined by files currently in the Notes folder):
+{available_subjects}
 - unknown  (use this if the subject is not in the list above, or is unclear)
 
 Allowed tasks:
@@ -56,9 +51,9 @@ Allowed tasks:
 - unknown      (use this if the task does not match any of the above)
 
 Rules:
-- Never guess a subject. If it is not clearly one of the allowed subjects, return "unknown".
+- Never guess a subject. If it is not clearly one of the allowed subjects listed above, return "unknown".
 - Never guess a task. If it does not clearly match an allowed task, return "unknown".
-- Do not map unrecognised subjects (e.g. hindi, french, biology) to the closest subject.
+- Do not map unrecognised subjects to the closest subject.
 - Return only the exact allowed values listed above.
 """
 
@@ -76,7 +71,7 @@ def summary_agent(state):
     subject = state["subject"].lower()
     task = state["task"].lower()
 
-    filename = SUBJECT_FILE_MAP.get(subject)
+    filename = get_subject_file_map().get(subject)
 
     if not filename:
         error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
@@ -118,7 +113,7 @@ Notes:
 def flashcard_agent(state):
     subject = state["subject"].lower()
 
-    filename = SUBJECT_FILE_MAP.get(subject)
+    filename = get_subject_file_map().get(subject)
 
     if not filename:
         error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
@@ -153,7 +148,7 @@ Notes:
 def rewrite_agent(state):
     subject = state["subject"].lower()
 
-    filename = SUBJECT_FILE_MAP.get(subject)
+    filename = get_subject_file_map().get(subject)
 
     if not filename:
         error_msg = f"Sorry, I couldn't find notes for the subject: {subject}"
@@ -185,7 +180,7 @@ Notes:
 
 
 def unknown_subject_node(state):
-    available = ", ".join(SUBJECT_FILE_MAP.keys())
+    available = ", ".join(get_subject_file_map().keys())
     system = SystemMessage(content=f"""
 You are a helpful study assistant.
 
