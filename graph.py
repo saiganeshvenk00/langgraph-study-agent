@@ -9,7 +9,8 @@ from langchain_core.messages import HumanMessage
 
 from agents import router_node, summary_agent, flashcard_agent, rewrite_agent, unknown_subject_node, unknown_task_node, list_notes_agent
 
-#define the state of the graph
+
+#this is the state of the graph - it holds all the data that gets passed between nodes as the graph runs
 class State(TypedDict):
     messages: Annotated[List[Any], add_messages]
     subject: Annotated[str, "The subject of the study"]
@@ -20,15 +21,17 @@ class State(TypedDict):
     session_id: Annotated[str, "The session id"]
 
 
-#define the routing logic for the graph
+#this definition is the routing logic - it reads the subject and task from state and decides which agent node to send the flow to next
 def route_task(state: State):
     subject = state.get("subject", "").lower()
     task = state.get("task", "").lower()
 
     if subject == "unknown":
         return "unknown_subject_node"
+
     if task == "list_notes":
         return "list_notes_agent"
+
     if task in ["fetch_notes", "summary"]:
         return "summary_agent"
     elif task == "flashcards":
@@ -38,10 +41,11 @@ def route_task(state: State):
 
     return "unknown_task_node"
 
-#create the graph builder
+
+#create the graph builder - this is where we define all the nodes and edges before compiling
 graph_builder = StateGraph[State, None, State, State](State)
 
-#add nodes to the graph
+#add all the agent nodes to the graph - each node is a function that processes the state and returns an update
 graph_builder.add_node("router", router_node)
 graph_builder.add_node("summary_agent", summary_agent)
 graph_builder.add_node("flashcard_agent", flashcard_agent)
@@ -50,12 +54,10 @@ graph_builder.add_node("unknown_subject_node", unknown_subject_node)
 graph_builder.add_node("unknown_task_node", unknown_task_node)
 graph_builder.add_node("list_notes_agent", list_notes_agent)
 
-#add edges to the graph
-
+#every conversation always starts at the router node - it runs first no matter what
 graph_builder.add_edge(START, "router")
 
-
-#add conditional edges to the graph
+#after the router runs, this conditional edge decides which agent to go to based on the subject and task
 graph_builder.add_conditional_edges(
     "router",
     route_task,
@@ -76,6 +78,7 @@ graph_builder.add_conditional_edges(
     path_map,      # arg 3 (optional)
 )'''
 
+#after any agent finishes, the flow ends - there is no looping back
 graph_builder.add_edge("summary_agent", END)
 graph_builder.add_edge("flashcard_agent", END)
 graph_builder.add_edge("rewrite_agent", END)
@@ -83,11 +86,12 @@ graph_builder.add_edge("unknown_subject_node", END)
 graph_builder.add_edge("unknown_task_node", END)
 graph_builder.add_edge("list_notes_agent", END)
 
-#compile the graph
+#compile the graph with memory so it can remember the conversation across multiple messages in the same session
 memory = MemorySaver()
 graph = graph_builder.compile(checkpointer=memory)
 
-#define the function to run the graph
+
+#this definition is the entry point that main.py calls - it takes the users message and session id and runs the full graph
 def run_graph(user_input: str, session_id: str):
     state = graph.invoke(
         {
