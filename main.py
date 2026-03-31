@@ -37,8 +37,10 @@ def on_explorer_select(selected):
 
 
 #this is the gradio UI - we use gr.Blocks so we can add the folder input on top of the chat interface
-with gr.Blocks(title="Study-Buddy") as demo:
-    gr.Markdown("# Study-Buddy")
+css = ".center-title { text-align: center; }"
+
+with gr.Blocks(title="Study-Buddy", theme=gr.themes.Ocean(), css=css) as demo:
+    gr.Markdown("# Study-Buddy", elem_classes=["center-title"])
 
     #the folder path input and load button sit together so the user knows they are related
     with gr.Row(equal_height=True):
